@@ -2,8 +2,97 @@
 <html lang="en">
   <head>
 
+<style>
+
+
+  .ddrow {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .ddcolumn {
+    width: 100%;
+    padding: 0 1em 1em 1em;
+    text-align: center;
+  }
+  .ddcard {
+    width: 100%;
+    height: 100%;
+    padding: 2em 1.5em;
+    background: linear-gradient(#ffffff 50%, #2c7bfe 50%);
+    background-size: 100% 200%;
+    background-position: 0 2.5%;
+    border-radius: 5px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .ddcard h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1f194c;
+    margin: 1em 0;
+  }
+  .ddcard p {
+    color: #575a7b;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+  }
+  .ddicon-wrapper {
+    background-color: #2c7bfe;
+    position: relative;
+    margin: auto;
+    font-size: 30px;
+    height: 2.5em;
+    width: 2.5em;
+    color: #ffffff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    transition: 0.5s;
+  }
+  .ddcard:hover {
+    background-position: 0 100%;
+  }
+  .ddcard:hover .ddicon-wrapper {
+    background-color: #ffffff;
+    color: #2c7bfe;
+  }
+  .ddcard:hover h3 {
+    color: #ffffff;
+  }
+  .ddcard:hover p {
+    color: #f0f0f0;
+  }
+  @media screen and (min-width: 768px) {
+    ddsection {
+      padding: 0 2em;
+    }
+    .ddcolumn {
+      flex: 0 50%;
+      max-width: 50%;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    ddsection {
+      padding: 1em 3em;
+    }
+    .ddcolumn {
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+    }
+  }
+</style>
+
+
+
+
+
+
+
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Services Section</title>
+    <title>Responsive Services ddsection</title>
     <!-- Font Awesome CDN-->
     <link
       rel="stylesheet"
@@ -18,14 +107,14 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section>
-      <div class="row">
-        <h2 class="section-heading">Our Services</h2>
+    <ddsection>
+      <div class="ddrow">
+        <h2 class="ddsection-heading">Our Services</h2>
       </div>
-      <div class="row">
-        <div class="column">
-          <div class="card">
-            <div class="icon-wrapper">
+      <div class="ddrow">
+        <div class="ddcolumn">
+          <div class="ddcard">
+            <div class="ddicon-wrapper">
               <i class="fas fa-hammer"></i>
             </div>
             <h3>Service Heading</h3>
@@ -35,9 +124,9 @@
             </p>
           </div>
         </div>
-        <div class="column">
-          <div class="card">
-            <div class="icon-wrapper">
+        <div class="ddcolumn">
+          <div class="ddcard">
+            <div class="ddicon-wrapper">
               <i class="fas fa-brush"></i>
             </div>
             <h3>Service Heading</h3>
@@ -47,9 +136,9 @@
             </p>
           </div>
         </div>
-        <div class="column">
-          <div class="card">
-            <div class="icon-wrapper">
+        <div class="ddcolumn">
+          <div class="ddcard">
+            <div class="ddicon-wrapper">
               <i class="fas fa-wrench"></i>
             </div>
             <h3>Service Heading</h3>
@@ -59,9 +148,9 @@
             </p>
           </div>
         </div>
-        <div class="column">
-          <div class="card">
-            <div class="icon-wrapper">
+        <div class="ddcolumn">
+          <div class="ddcard">
+            <div class="ddicon-wrapper">
               <i class="fas fa-truck-pickup"></i>
             </div>
             <h3>Service Heading</h3>
@@ -71,9 +160,9 @@
             </p>
           </div>
         </div>
-        <div class="column">
-          <div class="card">
-            <div class="icon-wrapper">
+        <div class="ddcolumn">
+          <div class="ddcard">
+            <div class="ddicon-wrapper">
               <i class="fas fa-broom"></i>
             </div>
             <h3>Service Heading</h3>
@@ -83,9 +172,9 @@
             </p>
           </div>
         </div>
-        <div class="column">
-          <div class="card">
-            <div class="icon-wrapper">
+        <div class="ddcolumn">
+          <div class="ddcard">
+            <div class="ddicon-wrapper">
               <i class="fas fa-plug"></i>
             </div>
             <h3>Service Heading</h3>
@@ -97,10 +186,10 @@
         </div>
       </div>
       
-      <div class="row">
-        <div class="column">
-          <div class="card">
-            <div class="icon-wrapper">
+      <div class="ddrow">
+        <div class="ddcolumn">
+          <div class="ddcard">
+            <div class="ddicon-wrapper">
               <i class="fas fa-hammer"></i>
             </div>
             <h3>Service Heading</h3>
@@ -110,9 +199,9 @@
             </p>
           </div>
         </div>
-        <div class="column">
-          <div class="card">
-            <div class="icon-wrapper">
+        <div class="ddcolumn">
+          <div class="ddcard">
+            <div class="ddicon-wrapper">
               <i class="fas fa-brush"></i>
             </div>
             <h3>Service Heading</h3>
@@ -122,9 +211,9 @@
             </p>
           </div>
         </div>
-        <div class="column">
-          <div class="card">
-            <div class="icon-wrapper">
+        <div class="ddcolumn">
+          <div class="ddcard">
+            <div class="ddicon-wrapper">
               <i class="fas fa-wrench"></i>
             </div>
             <h3>Service Heading</h3>
@@ -134,9 +223,9 @@
             </p>
           </div>
         </div>
-        <div class="column">
-          <div class="card">
-            <div class="icon-wrapper">
+        <div class="ddcolumn">
+          <div class="ddcard">
+            <div class="ddicon-wrapper">
               <i class="fas fa-truck-pickup"></i>
             </div>
             <h3>Service Heading</h3>
@@ -146,9 +235,9 @@
             </p>
           </div>
         </div>
-        <div class="column">
-          <div class="card">
-            <div class="icon-wrapper">
+        <div class="ddcolumn">
+          <div class="ddcard">
+            <div class="ddicon-wrapper">
               <i class="fas fa-broom"></i>
             </div>
             <h3>Service Heading</h3>
@@ -158,9 +247,9 @@
             </p>
           </div>
         </div>
-        <div class="column">
-          <div class="card">
-            <div class="icon-wrapper">
+        <div class="ddcolumn">
+          <div class="ddcard">
+            <div class="ddicon-wrapper">
               <i class="fas fa-plug"></i>
             </div>
             <h3>Service Heading</h3>
@@ -171,6 +260,6 @@
           </div>
         </div>
       </div>
-    </section>
+    </ddsection>
   </body>
 </html>
