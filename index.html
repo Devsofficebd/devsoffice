@@ -1,1030 +1,263 @@
-
 <!doctype html>
-<html lang="en-US">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
-	<title>Devs Office &#8211; Where Every Line of Code Tells a Story</title>
-<meta name='robots' content='max-image-preview:large' />
-<link rel='dns-prefetch' href='//code.jivosite.com' />
-<link rel="alternate" type="application/rss+xml" title="Devs Office &raquo; Feed" href="https://devsoffice.com/feed/" />
-<link rel="alternate" type="application/rss+xml" title="Devs Office &raquo; Comments Feed" href="https://devsoffice.com/comments/feed/" />
-<script>
-window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/devsoffice.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.4.3"}};
-/*! This file is auto-generated */
-!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
-</script>
-<style id='wp-emoji-styles-inline-css'>
-.elementor-element.elementor-element-4b6743bc.e-flex.e-con-boxed.e-con.e-child {
-    min-height: 100px !important;
-}
-
-	
-	img.wp-smiley, img.emoji {
-		display: inline !important;
-		border: none !important;
-		box-shadow: none !important;
-		height: 1em !important;
-		width: 1em !important;
-		margin: 0 0.07em !important;
-		vertical-align: -0.1em !important;
-		background: none !important;
-		padding: 0 !important;
-	}
-</style>
-<link rel='stylesheet' id='jet-engine-frontend-css' href='https://devsoffice.com/wp-content/plugins/jet-engine/assets/css/frontend.css?ver=3.4.0' media='all' />
-<style id='classic-theme-styles-inline-css'>
-/*! This file is auto-generated */
-.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
-</style>
-<style id='global-styles-inline-css'>
-body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
-.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
-:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
-:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
-.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
-</style>
-<link rel='stylesheet' id='copy-the-code-css' href='https://devsoffice.com/wp-content/plugins/copy-the-code/assets/css/copy-the-code.css?ver=3.5.2' media='all' />
-<link rel='stylesheet' id='ctc-copy-inline-css' href='https://devsoffice.com/wp-content/plugins/copy-the-code/assets/css/copy-inline.css?ver=3.5.2' media='all' />
-<link rel='stylesheet' id='woocommerce-layout-css' href='https://devsoffice.com/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=8.6.1' media='all' />
-<link rel='stylesheet' id='woocommerce-smallscreen-css' href='https://devsoffice.com/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=8.6.1' media='only screen and (max-width: 768px)' />
-<link rel='stylesheet' id='woocommerce-general-css' href='https://devsoffice.com/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=8.6.1' media='all' />
-<style id='woocommerce-inline-inline-css'>
-.woocommerce form .form-row .required { visibility: visible; }
-</style>
-<link rel='stylesheet' id='hello-elementor-css' href='https://devsoffice.com/wp-content/themes/hello-elementor/style.min.css?ver=3.0.0' media='all' />
-<link rel='stylesheet' id='hello-elementor-theme-style-css' href='https://devsoffice.com/wp-content/themes/hello-elementor/theme.min.css?ver=3.0.0' media='all' />
-<link rel='stylesheet' id='hello-elementor-header-footer-css' href='https://devsoffice.com/wp-content/themes/hello-elementor/header-footer.min.css?ver=3.0.0' media='all' />
-<link rel='stylesheet' id='elementor-frontend-css' href='https://devsoffice.com/wp-content/plugins/elementor/assets/css/frontend-lite.min.css?ver=3.19.4' media='all' />
-<link rel='stylesheet' id='elementor-post-3274-css' href='https://devsoffice.com/wp-content/uploads/elementor/css/post-3274.css?ver=1710300931' media='all' />
-<link rel='stylesheet' id='jet-popup-frontend-css' href='https://devsoffice.com/wp-content/plugins/jet-popup/assets/css/jet-popup-frontend.css?ver=2.0.3.1' media='all' />
-<link rel='stylesheet' id='jet-reviews-frontend-css' href='https://devsoffice.com/wp-content/plugins/jet-reviews/assets/css/jet-reviews.css?ver=2.3.3' media='all' />
-<link rel='stylesheet' id='jet-elements-css' href='https://devsoffice.com/wp-content/plugins/jet-elements/assets/css/jet-elements.css?ver=2.6.16' media='all' />
-<link rel='stylesheet' id='jet-elements-skin-css' href='https://devsoffice.com/wp-content/plugins/jet-elements/assets/css/jet-elements-skin.css?ver=2.6.16' media='all' />
-<link rel='stylesheet' id='elementor-icons-css' href='https://devsoffice.com/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.29.0' media='all' />
-<link rel='stylesheet' id='swiper-css' href='https://devsoffice.com/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5' media='all' />
-<link rel='stylesheet' id='elementor-pro-css' href='https://devsoffice.com/wp-content/plugins/elementor-pro/assets/css/frontend-lite.min.css?ver=3.19.3' media='all' />
-<link rel='stylesheet' id='jet-tabs-frontend-css' href='https://devsoffice.com/wp-content/plugins/jet-tabs/assets/css/jet-tabs-frontend.css?ver=2.1.25.3' media='all' />
-<link rel='stylesheet' id='font-awesome-5-all-css' href='https://devsoffice.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=3.19.4' media='all' />
-<link rel='stylesheet' id='font-awesome-4-shim-css' href='https://devsoffice.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.19.4' media='all' />
-<link rel='stylesheet' id='she-header-style-css' href='https://devsoffice.com/wp-content/plugins/sticky-header-effects-for-elementor/assets/css/she-header-style.css?ver=1.6.10' media='all' />
-<link rel='stylesheet' id='elementor-post-3299-css' href='https://devsoffice.com/wp-content/uploads/elementor/css/post-3299.css?ver=1710300931' media='all' />
-<link rel='stylesheet' id='elementor-post-3352-css' href='https://devsoffice.com/wp-content/uploads/elementor/css/post-3352.css?ver=1710300931' media='all' />
-<link rel='stylesheet' id='elementor-post-5137-css' href='https://devsoffice.com/wp-content/uploads/elementor/css/post-5137.css?ver=1710478382' media='all' />
-<link rel='stylesheet' id='elementor-post-3353-css' href='https://devsoffice.com/wp-content/uploads/elementor/css/post-3353.css?ver=1710300931' media='all' />
-<link rel='stylesheet' id='elementor-post-4244-css' href='https://devsoffice.com/wp-content/uploads/elementor/css/post-4244.css?ver=1710300931' media='all' />
-<link rel='stylesheet' id='ctc-blocks-core-css' href='https://devsoffice.com/wp-content/plugins/copy-the-code/classes/blocks/assets/css/style.css?ver=3.5.2' media='all' />
-<link rel='stylesheet' id='ctc-el-email-sample-css' href='https://devsoffice.com/wp-content/plugins/copy-the-code/classes/elementor/widgets/email-sample/style.css?ver=3.5.2' media='all' />
-<link rel='stylesheet' id='ctc-blocks-css' href='https://devsoffice.com/wp-content/plugins/copy-the-code/classes/blocks/assets/css/style.css?ver=3.5.2' media='all' />
-<link rel='stylesheet' id='ctc-el-email-address-css' href='https://devsoffice.com/wp-content/plugins/copy-the-code/classes/elementor/widgets/email-address/style.css?ver=3.5.2' media='all' />
-<link rel='stylesheet' id='ctc-el-phone-number-css' href='https://devsoffice.com/wp-content/plugins/copy-the-code/classes/elementor/widgets/phone-number/style.css?ver=3.5.2' media='all' />
-<link rel='stylesheet' id='ctc-el-copy-icon-css' href='https://devsoffice.com/wp-content/plugins/copy-the-code/classes/elementor/widgets/copy-icon/style.css?ver=3.5.2' media='all' />
-<link rel='stylesheet' id='ctc-el-blockquote-css' href='https://devsoffice.com/wp-content/plugins/copy-the-code/classes/elementor/widgets/blockquote/style.css?ver=3.5.2' media='all' />
-<link rel='stylesheet' id='ctc-el-code-snippet-css' href='https://devsoffice.com/wp-content/plugins/copy-the-code/classes/elementor/widgets/code-snippet/style.css?ver=3.5.2' media='all' />
-<link rel='stylesheet' id='ctc-el-message-css' href='https://devsoffice.com/wp-content/plugins/copy-the-code/classes/elementor/widgets/message/style.css?ver=3.5.2' media='all' />
-<link rel='stylesheet' id='ctc-el-wish-css' href='https://devsoffice.com/wp-content/plugins/copy-the-code/classes/elementor/widgets/wish/style.css?ver=3.5.2' media='all' />
-<link rel='stylesheet' id='ctc-el-shayari-css' href='https://devsoffice.com/wp-content/plugins/copy-the-code/classes/elementor/widgets/shayari/style.css?ver=3.5.2' media='all' />
-<link rel='stylesheet' id='ctc-el-sms-css' href='https://devsoffice.com/wp-content/plugins/copy-the-code/classes/elementor/widgets/sms/style.css?ver=3.5.2' media='all' />
-<link rel='stylesheet' id='ctc-el-deal-css' href='https://devsoffice.com/wp-content/plugins/copy-the-code/classes/elementor/widgets/deal/style.css?ver=3.5.2' media='all' />
-<link rel='stylesheet' id='ctc-el-coupon-css' href='https://devsoffice.com/wp-content/plugins/copy-the-code/classes/elementor/widgets/coupon/style.css?ver=3.5.2' media='all' />
-<link rel='stylesheet' id='ctc-el-ai-prompt-generator-css' href='https://devsoffice.com/wp-content/plugins/copy-the-code/classes/elementor/widgets/ai-prompt-generator/style.css?ver=3.5.2' media='all' />
-<link rel='stylesheet' id='ctc-el-table-css' href='https://devsoffice.com/wp-content/plugins/copy-the-code/classes/elementor/widgets/table/style.css?ver=3.5.2' media='all' />
-<link rel='stylesheet' id='ctc-el-contact-information-css' href='https://devsoffice.com/wp-content/plugins/copy-the-code/classes/elementor/widgets/contact-information/style.css?ver=3.5.2' media='all' />
-<link rel='stylesheet' id='photoswipe-css' href='https://devsoffice.com/wp-content/plugins/woocommerce/assets/css/photoswipe/photoswipe.min.css?ver=8.6.1' media='all' />
-<link rel='stylesheet' id='photoswipe-default-skin-css' href='https://devsoffice.com/wp-content/plugins/woocommerce/assets/css/photoswipe/default-skin/default-skin.min.css?ver=8.6.1' media='all' />
-<link rel='stylesheet' id='jet-woo-builder-css' href='https://devsoffice.com/wp-content/plugins/jet-woo-builder/assets/css/frontend.css?ver=2.1.10' media='all' />
-<style id='jet-woo-builder-inline-css'>
-@font-face {
-				font-family: "WooCommerce";
-				font-weight: normal;
-				font-style: normal;
-				src: url("https://devsoffice.com/wp-content/plugins/woocommerce/assets/fonts/WooCommerce.eot");
-				src: url("https://devsoffice.com/wp-content/plugins/woocommerce/assets/fonts/WooCommerce.eot?#iefix") format("embedded-opentype"),
-					 url("https://devsoffice.com/wp-content/plugins/woocommerce/assets/fonts/WooCommerce.woff") format("woff"),
-					 url("https://devsoffice.com/wp-content/plugins/woocommerce/assets/fonts/WooCommerce.ttf") format("truetype"),
-					 url("https://devsoffice.com/wp-content/plugins/woocommerce/assets/fonts/WooCommerce.svg#WooCommerce") format("svg");
-			}
-</style>
-<link rel='stylesheet' id='elementor-icons-shared-0-css' href='https://devsoffice.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3' media='all' />
-<link rel='stylesheet' id='elementor-icons-fa-solid-css' href='https://devsoffice.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3' media='all' />
-<link rel='stylesheet' id='jet-woo-builder-frontend-font-css' href='https://devsoffice.com/wp-content/plugins/jet-woo-builder/assets/css/lib/jetwoobuilder-frontend-font/css/jetwoobuilder-frontend-font.css?ver=2.1.10' media='all' />
-<link rel='stylesheet' id='elementor-post-3843-css' href='https://devsoffice.com/wp-content/uploads/elementor/css/post-3843.css?ver=1710300931' media='all' />
-<link rel='stylesheet' id='elementor-post-3292-css' href='https://devsoffice.com/wp-content/uploads/elementor/css/post-3292.css?ver=1710300931' media='all' />
-<link rel='stylesheet' id='jquery-chosen-css' href='https://devsoffice.com/wp-content/plugins/jet-search/assets/lib/chosen/chosen.min.css?ver=1.8.7' media='all' />
-<link rel='stylesheet' id='jet-search-css' href='https://devsoffice.com/wp-content/plugins/jet-search/assets/css/jet-search.css?ver=3.3.0' media='all' />
-<link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.4.3' media='all' />
-<link rel='stylesheet' id='elementor-icons-fa-brands-css' href='https://devsoffice.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min.css?ver=5.15.3' media='all' />
-<link rel='stylesheet' id='elementor-icons-fa-regular-css' href='https://devsoffice.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/regular.min.css?ver=5.15.3' media='all' />
-<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><script src="https://devsoffice.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
-<script src="https://devsoffice.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
-<script src="https://devsoffice.com/wp-includes/js/imagesloaded.min.js?ver=6.4.3" id="imagesLoaded-js"></script>
-<script src="https://devsoffice.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.8.6.1" id="jquery-blockui-js" defer data-wp-strategy="defer"></script>
-<script src="https://devsoffice.com/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.8.6.1" id="js-cookie-js" defer data-wp-strategy="defer"></script>
-<script id="woocommerce-js-extra">
-var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
-</script>
-<script src="https://devsoffice.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=8.6.1" id="woocommerce-js" defer data-wp-strategy="defer"></script>
-<script src="https://devsoffice.com/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.19.4" id="font-awesome-4-shim-js"></script>
-<script src="https://devsoffice.com/wp-content/plugins/sticky-header-effects-for-elementor/assets/js/she-header.js?ver=1.6.10" id="she-header-js"></script>
-<link rel="https://api.w.org/" href="https://devsoffice.com/wp-json/" /><link rel="alternate" type="application/json" href="https://devsoffice.com/wp-json/wp/v2/pages/3299" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://devsoffice.com/xmlrpc.php?rsd" />
-<meta name="generator" content="WordPress 6.4.3" />
-<meta name="generator" content="WooCommerce 8.6.1" />
-<link rel="canonical" href="https://devsoffice.com/" />
-<link rel='shortlink' href='https://devsoffice.com/' />
-<link rel="alternate" type="application/json+oembed" href="https://devsoffice.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdevsoffice.com%2F" />
-<link rel="alternate" type="text/xml+oembed" href="https://devsoffice.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdevsoffice.com%2F&#038;format=xml" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<style>
-/* Hide scrollbar on WebKit browsers (Chrome, Safari) */
-::-webkit-scrollbar {
-    width: 0; /* Set width to 0 to hide scrollbar */
-}
-
-/* Optional: You can also hide the track and buttons */
-::-webkit-scrollbar-track {
-    display: none; /* Hide scrollbar track */
-}
-
-::-webkit-scrollbar-thumb {
-    display: none; /* Hide scrollbar thumb */
-}
-	.copy-the-code-wrap .copy-the-code-button:hover {
-    background: #002bff;
-}
-	.copy-the-code-wrap .copy-the-code-button {
-    background: #0049ff;
-    padding: 10px 20px;
-    cursor: pointer;
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 500;
-    border-radius: 5px;
-
-}
-	pre.copy-the-code-target {
-    background: #fff !important;
-    padding: 40px;
-    border-radius: 10px !important;
-    color: #000;
-    font-weight: 400;
-    line-height: 2em;
-}
-	.panel_content_gVGVX.chat-form_eeUYM {
-    width: 100vw;
-    height: 100% !important;
-    display: block !important;
-}
-call-us#wp-live-chat-by-3CX {
-    position: fixed;
-    font-size: 16px;
-    line-height: 17px;
-    z-index: 99999;
-    left: 20px !important;
-    bottom: 0px;
-}
-</style>	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
-	<meta name="generator" content="Elementor 3.19.4; features: e_optimized_assets_loading, e_optimized_css_loading, additional_custom_breakpoints, block_editor_assets_optimize, e_image_loading_optimization; settings: css_print_method-external, google_font-enabled, font_display-swap">
-<style class="wpcode-css-snippet">    .jet-remove-all-filters {
-    visibility: visible;
-    opacity: 1;
-    transition: opacity 1.3s ease-out, visibility 1.3s ease-out;
-}
-.jet-remove-all-filters.hide {
-    display: flex; 
-    visibility: hidden;
-    opacity: 0;
-}
-
-</style><head>
-	<meta name="theme-color" content="#222" />
-    <style>
-        :root {
-			--ah_topbarbgcolor: #222;
-			--ahscreenbackground: #ddd;
-			--ahiconcolor:#fcb46a;
-			--ahiconhovercolor: #000;
-			--ahdevicesbackground: #ddd;
-			--ahdevicebordercolor: #222;
-			
-        }
-        html::-webkit-scrollbar {
-            width: 0px;
-        }
-        .popupsection {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: var(--ahscreenbackground);
-            box-shadow: 0px 0px 140px var(--ahscreenbackground);
-            width: 100vw !important;
-            height: 100vh !important;
-            z-index: 999999 !important;
-            border-radius: 0px;
-            overflow-y: hidden !important;
-            text-align: center !important;
-        }
-        .popupsection.show {
-            display: flex;
-			flex-direction: column;
-        }
-		.closepopup i.fa-solid.fa-xmark {
-    font-size: 25px !important;
-}
-        .closepopup {
-            margin: 5px !important;
-            display: block;
-            color: var(--ahiconcolor) !important;
-            background: var(--ahiconhovercolor) !important;
-			border: 1px solid var(--ahiconhovercolor) !important;
-        }
-        .closepopup:hover {
-			background: var(--ahiconcolor) !important;
-			color: var(--ahiconhovercolor) !important;
-			border: 1px solid var(--ahiconcolor) !important;
-        }
-        .popupsection iframe {
-            width: 100% !important;
-            height: 100vh !important;
-            margin: auto;
-			order: 2;
-			border: none !important;
-        }
-        .ah_top_bar {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            max-width: 100vw;
-            padding-left: 20px;
-            flex-wrap: nowrap;
-			background: var(--ah_topbarbgcolor);
-			order: 1;
-
-			
-        }
-        .ah_top_bar .ah_left_top {
-            width: 40%;
-            text-align: start;
-        }
-        .ah_top_bar .ah_right_top {
-            width: 60%;
-			display: flex;
-			
-        }
-        .ah_top_bar .ah_right_top ul {
-            list-style: none;
-            display: flex;
-            align-items: center;
-            justify-content: end;
-        }
-        .ah_top_bar .ah_right_top ul li i:hover {
-			background: var(--ahiconhovercolor);
-			border-radius: 3px;
-			color: var(--ahiconcolor);
-        }
-        .ah_top_bar .ah_right_top ul li i {
-            border-radius: 3px;
-			padding: 10px;
-            font-size: 25px;
-            color: var(--ahiconcolor);
-        }
-		
-		
-		@media (min-width: 728px) and (max-width: 1023px) {
-			.ah_right_top ul li i.ahdesktop{
-				display: none;
-			}
-}
-				@media (min-width: 0px) and (max-width: 728px) {
-			.ah_right_top ul li i{
-				display: none;
-			}
-			        .ah_top_bar {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            max-width: 100vw;
-            padding-left: 20px;
-            flex-wrap: nowrap;
-			background: var(--ah_topbarbgcolor);
-			order: 2;
-			position: absolute;
-			bottom : 10%;
-			width: max-content;
-						border-radius: 10px;
-			
-        }
-        .ah_top_bar .ah_left_top {
-            width: 100%;
-            text-align: right;
-			
-        }
-        .ah_top_bar .ah_right_top {
-            
-			display: none;
-			
-        }	
-			.popupsection iframe {
-            width: 100% !important;
-            height: 100vh !important;
-            margin: auto;
-			order: 1;
-			padding-top: 15px;
-			background: var(--ah_topbarbgcolor);
-        }
-					
-}
-    </style>
-	
-<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Exciting news!</title>
+  <style>
+    html::-webkit-scrollbar{
+        display: none;
+    }
+    body{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+    p{
+        font-size: 16px;
+        font-weight: 500;
+    }
+  </style>
 </head>
-
-    <div class="popupsection">
-		  
-        <div class="ah_top_bar">
-            <div class="ah_left_top"><button class="closepopup"><i class="fa-solid fa-xmark"></i></button></div>
-            <div class="ah_right_top">
-                <ul>
-                    <li><i class="fa-solid fa-display ahdesktop"></i></li>
-                    <li><i class="fa-solid fa-tablet-screen-button ahtablet"></i></li>
-                    <li><i class="fa-solid fa-mobile-screen-button ahmobile"></i></li>
-                </ul>
+<body>
+    <section class="text-gray-600 body-font">
+        <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+          <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="https://raw.githubusercontent.com/Devsofficebd/devsoffice/main/hero-1-1.png">
+          <div class="text-center lg:w-2/3 w-full">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">An expert team
+                Can reduce your<br/>
+                expenses</h1>
+            <p style="width: 600px; margin:30px auto ;font-weight: 600" class="mb-8 leading-relaxed">Do you want to create a WordPress website that can help you to meet your dreams? We are here to help you. Our expert team can make you satisfied by providing a Great website.
+            </p>
+            <div class="flex justify-center">
+              <a target="_blank" href="https://devsoffice.com/portfolios/" class="inline-flex text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded text-lg">Our Portfolio</a>
+                <a target="_blank" href="https://devsoffice.com/our-services/" class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Our Services</a>
+                <a target="_blank" href="https://devsoffice.com/testimonials/" class="ml-4 inline-flex text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded text-lg">Our Reviews</a>
+              <a href="https://calendly.com/devsoffice/30min" class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Grab a free consultation</a>
             </div>
+          </div>
         </div>
-      <iframe name="myframe" src="https://ashiqhosenbd.github.io/dynamic-preloader/"></iframe>
-    </div>
-  
-    <script>
-        // Add your JavaScript code here
-        document.addEventListener('DOMContentLoaded', function () {
-            var triggerButtons = document.querySelectorAll('.popuptrigger');
-            var popupSection = document.querySelector('.popupsection');
-            var closeButton = document.querySelector('.closepopup');
-            var iframe = document.querySelector('.popupsection iframe');
+      </section>
 
-            for (var i = 0; i < triggerButtons.length; i++) {
-                triggerButtons[i].addEventListener('click', function () {
-                    popupSection.classList.add('show');
-                });
-            }
 
-            closeButton.addEventListener('click', function () {
-                popupSection.classList.remove('show');
-                iframe.src = 'https://ashiqhosenbd.github.io/dynamic-preloader/'; // Set the default URL for the iframe
-            });
 
-            // Function to add the custom attribute to the <a> tags inside .popuptrigger elements
-            function addCustomAttribute() {
-                var popupTriggers = document.querySelectorAll('.popuptrigger');
-                for (var i = 0; i < popupTriggers.length; i++) {
-                    var link = popupTriggers[i].querySelector('a');
-                    link.setAttribute('target', 'myframe');
-                }
-            }
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap w-full mb-20">
+            <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+              <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">We usually provide
+            </h1>
+              <div class="h-1 w-20 bg-purple-500 rounded"></div>
+            </div>
+            <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">With a team of experienced engineers and developers, we aim to provide our users with a great WordPress experience.
+            </p>
+          </div>
+          <div class="flex flex-wrap -m-4">
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-contain object-center mb-6" src="https://images2.imgbox.com/5b/23/84VJWdNg_o.png" alt="content">
 
-            // Call the function to add the custom attribute
-            addCustomAttribute();
-        });
+                <h2 class="text-lg text-center text-gray-900 font-medium title-font mb-4">WordPress
+                </h2>
+                <p class="leading-relaxed text-center text-base">Creating flexible, creative, and SEO-friendly WordPress websites suited to your brand’s specific needs. We guarantee to provide excellent services.
+                </p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-contain object-center mb-6" src="https://images2.imgbox.com/b1/fd/2RlPhohD_o.png" alt="content">
 
-        // Assuming you have jQuery loaded
-        $(document).ready(function() {
-            // Adding a click event handler to the .ah_top_bar .ah_right_top ul li i.ahdesktop element
-            $('.ah_top_bar .ah_right_top ul li i.ahdesktop').click(function() {
-                // Changing the CSS properties of the .popupsection iframe
-                $('.popupsection iframe').css({
-                    'max-width': '100%', // Change the max-width as needed
-                    'margin': 'auto',    // Center the iframe using margin auto
-					'max-height': '100vh',
-					'padding': '0px',
-					'background': 'var(--ahdevicesbackground)',
-					'border-radius': '0px',
-					'outline': '0px groove var(--ahdevicebordercolor)',
-                });
-            });
+                <h2 class="text-lg text-center  text-gray-900 font-medium title-font mb-4">Plugin Customizations
+                </h2>
+                <p class="leading-relaxed text-center  text-base">Improve the performance and prepare the current WordPress plugins for easy integration. If necessary, we may create new plugins.
+                </p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-contain object-center mb-6" src="https://images2.imgbox.com/fd/c3/xQDG0rCS_o.png" alt="content">
+   
+                <h2 class="text-lg text-center  text-gray-900 font-medium title-font mb-4">Ecommerce Solution
+                </h2>
+                <p class="leading-relaxed text-center  text-base">building robust online shops with user-friendly shopping experiences and secure payment systems. Let's cooperate to achieve the greatest level of website optimization.
 
-            // Adding a click event handler to the .ah_top_bar .ah_right_top ul li i.ahtablet element
-            $('.ah_top_bar .ah_right_top ul li i.ahtablet').click(function() {
-                // Changing the CSS properties of the .popupsection iframe
-                $('.popupsection iframe').css({
-                    'max-width': '1024px',
-                    'margin': 'auto',  
-					'max-height': '80vh',
-					'padding': ' 50px 30px',
-					'background': 'var(--ahdevicesbackground)',
-					'border-radius': '40px',
-					'outline': '15px groove var(--ahdevicebordercolor)',
-					
-                });
-            });
+                </p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-contain object-center mb-6" src="https://images2.imgbox.com/5f/6d/eJ1FfpIT_o.png" alt="content">
 
-            // Adding a click event handler to the .ah_top_bar .ah_right_top ul li i.ahmobile element
-            $('.ah_top_bar .ah_right_top ul li i.ahmobile').click(function() {
-                // Changing the CSS properties of the .popupsection iframe
-                $('.popupsection iframe').css({
-                    'max-width': '550px', // Change the max-width as needed
-                    'margin': 'auto',    // Center the iframe using margin auto
-					'max-height': '83vh',
-					'padding': ' 35px 20px',
-					'background': 'var(--ahdevicesbackground)',
-					'border-radius': '40px',
-					'outline': '15px groove var(--ahdevicebordercolor)',
-                });
-            });
-        });
-    </script><style class="wpcode-css-snippet">.jet-reviews-advanced__review-control-group .jet-reviews-button.jet-reviews-button--primary:last-child {
-display: none ;
-}
-.logged-in .jet-reviews-advanced__review-control-group .jet-reviews-button.jet-reviews-button--primary:last-child {
-display: block ;
-}
+                <h2 class="text-lg text-center text-gray-900 font-medium title-font mb-4">SEO</h2>
+                <p class="leading-relaxed text-center  text-base">To improve your website's rank in the search engine results and attract worthwhile organic visitors, We use effective SEO strategies that are tailored to your WordPress website.
 
-.main_c432 {
-    margin-bottom: 16px !important;
-    padding-right: 35px !important;
+                </p>
+              </div>
+            </div>
+          </div>
 
-}
-.container_ffed {
-    clear: both;
-    display: block;
-    margin: 0 35px 0px 10px !important;
-    padding: 0 0 12px;
-}
-</style><link rel="icon" href="https://devsoffice.com/wp-content/uploads/2024/01/cropped-Site-Icon-32x32.png" sizes="32x32" />
-<link rel="icon" href="https://devsoffice.com/wp-content/uploads/2024/01/cropped-Site-Icon-192x192.png" sizes="192x192" />
-<link rel="apple-touch-icon" href="https://devsoffice.com/wp-content/uploads/2024/01/cropped-Site-Icon-180x180.png" />
-<meta name="msapplication-TileImage" content="https://devsoffice.com/wp-content/uploads/2024/01/cropped-Site-Icon-270x270.png" />
-		<style id="wp-custom-css">
-			
 
-		</style>
-		</head>
-<body class="home page-template page-template-elementor_header_footer page page-id-3299 wp-custom-logo theme-hello-elementor woocommerce-no-js elementor-default elementor-template-full-width elementor-kit-3274 elementor-page elementor-page-3299">
 
-				<div data-elementor-type="wp-page" data-elementor-id="3299" class="elementor elementor-3299" data-elementor-post-type="page">
-				<div class="elementor-element elementor-element-4f6c3e73 e-con-full e-flex e-con e-parent" data-id="4f6c3e73" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;jet_parallax_layout_list&quot;:[],&quot;content_width&quot;:&quot;full&quot;}" data-core-v316-plus="true">
-		<div style="max-height:60vh; " class="elementor-element elementor-element-4b6743bc e-flex e-con-boxed e-con e-child" data-id="4b6743bc" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[],&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-675964f7 e-con-full e-flex e-con e-child" data-id="675964f7" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;jet_parallax_layout_list&quot;:[]}">
-				<div class="elementor-element elementor-element-67e508d6 elementor-widget elementor-widget-heading" data-id="67e508d6" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<style>/*! elementor - v3.19.0 - 28-02-2024 */
-.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style><h2 class="elementor-heading-title elementor-size-default">An expert team</h2>		</div>
-				</div>
-				<div class="elementor-element elementor-element-7fc11bb7 elementor-widget elementor-widget-heading" data-id="7fc11bb7" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">Can reduce your</h2>		</div>
-				</div>
-				<div class="elementor-element elementor-element-b1a9233 elementor-widget elementor-widget-heading" data-id="b1a9233" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">expenses</h2>		</div>
-				</div>
-				<div class="elementor-element elementor-element-4cd785be elementor-widget elementor-widget-text-editor" data-id="4cd785be" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-			<style>/*! elementor - v3.19.0 - 28-02-2024 */
-.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#69727d;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#69727d;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				Do you want to create a WordPress website that can help you to meet your dreams? We are here to help you. Our expert team can make you satisfied by providing a Great website.						</div>
-				</div>
-				</div>
-		<div class="elementor-element elementor-element-580b63a0 e-con-full e-flex e-con e-child" data-id="580b63a0" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;content_width&quot;:&quot;full&quot;,&quot;jet_parallax_layout_list&quot;:[]}">
-				<div class="elementor-element elementor-element-5a8e6a9 elementor-widget elementor-widget-image-carousel" data-id="5a8e6a9" data-element_type="widget" data-settings="{&quot;slides_to_show&quot;:&quot;1&quot;,&quot;navigation&quot;:&quot;none&quot;,&quot;pause_on_interaction&quot;:&quot;no&quot;,&quot;effect&quot;:&quot;fade&quot;,&quot;autoplay_speed&quot;:2000,&quot;speed&quot;:1000,&quot;pause_on_hover&quot;:&quot;no&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;infinite&quot;:&quot;yes&quot;}" data-widget_type="image-carousel.default">
-				<div class="elementor-widget-container">
-			<style>/*! elementor - v3.19.0 - 28-02-2024 */
-.elementor-widget-image-carousel .swiper,.elementor-widget-image-carousel .swiper-container{position:static}.elementor-widget-image-carousel .swiper-container .swiper-slide figure,.elementor-widget-image-carousel .swiper .swiper-slide figure{line-height:inherit}.elementor-widget-image-carousel .swiper-slide{text-align:center}.elementor-image-carousel-wrapper:not(.swiper-container-initialized):not(.swiper-initialized) .swiper-slide{max-width:calc(100% / var(--e-image-carousel-slides-to-show, 3))}</style>		<div class="elementor-image-carousel-wrapper swiper" dir="rtl">
-			<div class="elementor-image-carousel swiper-wrapper" aria-live="off">
-								<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 of 4"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://devsoffice.com/wp-content/uploads/2023/12/hero-1-1.png" alt="hero-1.png" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 of 4"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://devsoffice.com/wp-content/uploads/2023/12/Colorful-3D-Circular-Diagram-Concept-Map-1.gif" alt="Colorful-3D-Circular-Diagram-Concept-Map.gif" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 of 4"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://devsoffice.com/wp-content/uploads/2023/12/hero-1-2.png" alt="hero-.png" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="4 of 4"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://devsoffice.com/wp-content/uploads/2023/12/hero-4-1.png" alt="hero-4.png" /></figure></div>			</div>
-							
-									</div>
-				</div>
-				</div>
-				</div>
-					</div>
-				</div>
+          <div class="flex flex-wrap -m-4">
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-contain object-center mb-6" src="https://images2.imgbox.com/a8/d6/Xcx7STr7_o.png" alt="content">
 
-		<div class="elementor-element elementor-element-4b61e704 e-con-full e-flex e-con e-child" data-id="4b61e704" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;background_background&quot;:&quot;classic&quot;,&quot;jet_parallax_layout_list&quot;:[]}">
-		<div class="elementor-element elementor-element-11656a8c e-flex e-con-boxed e-con e-child" data-id="11656a8c" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[],&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-7a00aa66 e-con-full e-flex e-con e-child" data-id="7a00aa66" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;sticky&quot;:&quot;top&quot;,&quot;sticky_on&quot;:[&quot;desktop&quot;],&quot;sticky_parent&quot;:&quot;yes&quot;,&quot;sticky_offset&quot;:150,&quot;jet_parallax_layout_list&quot;:[],&quot;sticky_effects_offset&quot;:0}">
-				<div class="elementor-element elementor-element-224c59da elementor-widget elementor-widget-heading" data-id="224c59da" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">We usually provide </h2>		</div>
-				</div>
-				<div class="elementor-element elementor-element-6d5eceb4 elementor-widget elementor-widget-text-editor" data-id="6d5eceb4" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							With a team of experienced engineers and developers, we aim to provide our users with a great WordPress experience.						</div>
-				</div>
-				</div>
-		<div class="elementor-element elementor-element-7eb226a0 e-con-full e-flex e-con e-child" data-id="7eb226a0" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;jet_parallax_layout_list&quot;:[]}">
-				<div class="elementor-element elementor-element-2ab8107 elementor-widget elementor-widget-jet-listing-grid" data-id="2ab8107" data-element_type="widget" data-settings="{&quot;columns&quot;:&quot;2&quot;,&quot;columns_mobile&quot;:&quot;1&quot;}" data-widget_type="jet-listing-grid.default">
-				<div class="elementor-widget-container">
-			<div class="jet-listing-grid jet-listing"><div class="jet-listing-grid__items grid-col-desk-2 grid-col-tablet-2 grid-col-mobile-1 jet-listing-grid--3352" data-queried-id="3299|WP_Post" data-nav="{&quot;enabled&quot;:false,&quot;type&quot;:null,&quot;more_el&quot;:null,&quot;query&quot;:[],&quot;widget_settings&quot;:{&quot;lisitng_id&quot;:3352,&quot;posts_num&quot;:10,&quot;columns&quot;:2,&quot;columns_tablet&quot;:2,&quot;columns_mobile&quot;:1,&quot;is_archive_template&quot;:&quot;&quot;,&quot;post_status&quot;:[&quot;publish&quot;],&quot;use_random_posts_num&quot;:&quot;&quot;,&quot;max_posts_num&quot;:9,&quot;not_found_message&quot;:&quot;No data was found&quot;,&quot;is_masonry&quot;:false,&quot;equal_columns_height&quot;:&quot;&quot;,&quot;use_load_more&quot;:&quot;&quot;,&quot;load_more_id&quot;:&quot;&quot;,&quot;load_more_type&quot;:&quot;click&quot;,&quot;load_more_offset&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0,&quot;sizes&quot;:[]},&quot;use_custom_post_types&quot;:&quot;&quot;,&quot;custom_post_types&quot;:[],&quot;hide_widget_if&quot;:&quot;&quot;,&quot;carousel_enabled&quot;:&quot;&quot;,&quot;slides_to_scroll&quot;:&quot;1&quot;,&quot;arrows&quot;:&quot;true&quot;,&quot;arrow_icon&quot;:&quot;fa fa-angle-left&quot;,&quot;dots&quot;:&quot;&quot;,&quot;autoplay&quot;:&quot;true&quot;,&quot;pause_on_hover&quot;:&quot;true&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;true&quot;,&quot;center_mode&quot;:&quot;&quot;,&quot;effect&quot;:&quot;slide&quot;,&quot;speed&quot;:500,&quot;inject_alternative_items&quot;:&quot;&quot;,&quot;injection_items&quot;:[],&quot;scroll_slider_enabled&quot;:&quot;&quot;,&quot;scroll_slider_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;],&quot;custom_query&quot;:false,&quot;custom_query_id&quot;:&quot;&quot;,&quot;_element_id&quot;:&quot;&quot;}}" data-page="1" data-pages="1" data-listing-source="posts" data-listing-id="3352" data-query-id=""><div class="jet-listing-grid__item jet-listing-dynamic-post-3410" data-post-id="3410" >		<div data-elementor-type="jet-listing-items" data-elementor-id="3352" class="elementor elementor-3352" data-elementor-post-type="jet-engine">
-				<div class="elementor-element elementor-element-8023624 e-flex e-con-boxed e-con e-parent" data-id="8023624" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[],&quot;content_width&quot;:&quot;boxed&quot;}" data-core-v316-plus="true">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-e5c3a60 elementor-widget__width-inherit elementor-position-top elementor-widget elementor-widget-image-box" data-id="e5c3a60" data-element_type="widget" data-widget_type="image-box.default">
-				<div class="elementor-widget-container">
-			<style>/*! elementor - v3.19.0 - 28-02-2024 */
-.elementor-widget-image-box .elementor-image-box-content{width:100%}@media (min-width:768px){.elementor-widget-image-box.elementor-position-left .elementor-image-box-wrapper,.elementor-widget-image-box.elementor-position-right .elementor-image-box-wrapper{display:flex}.elementor-widget-image-box.elementor-position-right .elementor-image-box-wrapper{text-align:right;flex-direction:row-reverse}.elementor-widget-image-box.elementor-position-left .elementor-image-box-wrapper{text-align:left;flex-direction:row}.elementor-widget-image-box.elementor-position-top .elementor-image-box-img{margin:auto}.elementor-widget-image-box.elementor-vertical-align-top .elementor-image-box-wrapper{align-items:flex-start}.elementor-widget-image-box.elementor-vertical-align-middle .elementor-image-box-wrapper{align-items:center}.elementor-widget-image-box.elementor-vertical-align-bottom .elementor-image-box-wrapper{align-items:flex-end}}@media (max-width:767px){.elementor-widget-image-box .elementor-image-box-img{margin-left:auto!important;margin-right:auto!important;margin-bottom:15px}}.elementor-widget-image-box .elementor-image-box-img{display:inline-block}.elementor-widget-image-box .elementor-image-box-title a{color:inherit}.elementor-widget-image-box .elementor-image-box-wrapper{text-align:center}.elementor-widget-image-box .elementor-image-box-description{margin:0}</style><div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img post-id="3410" fifu-featured="1" decoding="async" width="512" height="512" src="https://images2.imgbox.com/5b/23/84VJWdNg_o.png" class="attachment-full size-full wp-image-4722" alt="WordPress" title="WordPress" /></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">WordPress</h3><p class="elementor-image-box-description">Creating flexible, creative, and SEO-friendly WordPress websites suited to your brand’s specific needs. We guarantee to provide excellent services.
+                <h2 class="text-lg text-center text-gray-900 font-medium title-font mb-4">Membership Website
 
-</p></div></div>		</div>
-				</div>
-					</div>
-				</div>
-				</div>
-		</div><div class="jet-listing-grid__item jet-listing-dynamic-post-3411" data-post-id="3411" >		<div data-elementor-type="jet-listing-items" data-elementor-id="3352" class="elementor elementor-3352" data-elementor-post-type="jet-engine">
-				<div class="elementor-element elementor-element-8023624 e-flex e-con-boxed e-con e-parent" data-id="8023624" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[],&quot;content_width&quot;:&quot;boxed&quot;}" data-core-v316-plus="true">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-e5c3a60 elementor-widget__width-inherit elementor-position-top elementor-widget elementor-widget-image-box" data-id="e5c3a60" data-element_type="widget" data-widget_type="image-box.default">
-				<div class="elementor-widget-container">
-			<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img post-id="3411" fifu-featured="1" decoding="async" width="512" height="512" src="https://images2.imgbox.com/b1/fd/2RlPhohD_o.png" class="attachment-full size-full wp-image-4720" alt="Plugin Customizations" title="Plugin Customizations" /></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Plugin Customizations</h3><p class="elementor-image-box-description">Improve the performance and prepare the current WordPress plugins for easy integration. If necessary, we may create new plugins.
+                </h2>
+                <p class="leading-relaxed text-center text-base">With the help of our membership website development service, join active online communities. Enhance your online visibility by using a user-friendly design. Join us as we promote online collaboration!
 
-</p></div></div>		</div>
-				</div>
-					</div>
-				</div>
-				</div>
-		</div><div class="jet-listing-grid__item jet-listing-dynamic-post-3412" data-post-id="3412" >		<div data-elementor-type="jet-listing-items" data-elementor-id="3352" class="elementor elementor-3352" data-elementor-post-type="jet-engine">
-				<div class="elementor-element elementor-element-8023624 e-flex e-con-boxed e-con e-parent" data-id="8023624" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[],&quot;content_width&quot;:&quot;boxed&quot;}" data-core-v316-plus="true">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-e5c3a60 elementor-widget__width-inherit elementor-position-top elementor-widget elementor-widget-image-box" data-id="e5c3a60" data-element_type="widget" data-widget_type="image-box.default">
-				<div class="elementor-widget-container">
-			<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img post-id="3412" fifu-featured="1" loading="lazy" decoding="async" width="512" height="512" src="https://images2.imgbox.com/fd/c3/xQDG0rCS_o.png" class="attachment-full size-full wp-image-4716" alt="Ecommerce Solution" title="Ecommerce Solution" /></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Ecommerce Solution</h3><p class="elementor-image-box-description">building robust online shops with user-friendly shopping experiences and secure payment systems. Let's cooperate to achieve the greatest level of website optimization.
 
-</p></div></div>		</div>
-				</div>
-					</div>
-				</div>
-				</div>
-		</div><div class="jet-listing-grid__item jet-listing-dynamic-post-3413" data-post-id="3413" >		<div data-elementor-type="jet-listing-items" data-elementor-id="3352" class="elementor elementor-3352" data-elementor-post-type="jet-engine">
-				<div class="elementor-element elementor-element-8023624 e-flex e-con-boxed e-con e-parent" data-id="8023624" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[],&quot;content_width&quot;:&quot;boxed&quot;}" data-core-v316-plus="true">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-e5c3a60 elementor-widget__width-inherit elementor-position-top elementor-widget elementor-widget-image-box" data-id="e5c3a60" data-element_type="widget" data-widget_type="image-box.default">
-				<div class="elementor-widget-container">
-			<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img post-id="3413" fifu-featured="1" loading="lazy" decoding="async" width="512" height="512" src="https://images2.imgbox.com/5f/6d/eJ1FfpIT_o.png" class="attachment-full size-full wp-image-4721" alt="SEO" title="SEO" /></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">SEO</h3><p class="elementor-image-box-description">To improve your website's rank in the search engine results and attract worthwhile organic visitors, We use effective SEO strategies that are tailored to your WordPress website.
+                </p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-contain object-center mb-6" src="https://images2.imgbox.com/cf/2f/DUqWo5MW_o.png" alt="content">
 
-</p></div></div>		</div>
-				</div>
-					</div>
-				</div>
-				</div>
-		</div><div class="jet-listing-grid__item jet-listing-dynamic-post-3414" data-post-id="3414" >		<div data-elementor-type="jet-listing-items" data-elementor-id="3352" class="elementor elementor-3352" data-elementor-post-type="jet-engine">
-				<div class="elementor-element elementor-element-8023624 e-flex e-con-boxed e-con e-parent" data-id="8023624" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[],&quot;content_width&quot;:&quot;boxed&quot;}" data-core-v316-plus="true">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-e5c3a60 elementor-widget__width-inherit elementor-position-top elementor-widget elementor-widget-image-box" data-id="e5c3a60" data-element_type="widget" data-widget_type="image-box.default">
-				<div class="elementor-widget-container">
-			<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img post-id="3414" fifu-featured="1" loading="lazy" decoding="async" width="512" height="512" src="https://images2.imgbox.com/a8/d6/Xcx7STr7_o.png" class="attachment-full size-full wp-image-4718" alt="Membership Website" title="Membership Website" /></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Membership Website</h3><p class="elementor-image-box-description">With the help of our membership website development service, join active online communities. Enhance your online visibility by using a user-friendly design. Join us as we promote online collaboration!
+                <h2 class="text-lg text-center  text-gray-900 font-medium title-font mb-4">LMS Website
 
-</p></div></div>		</div>
-				</div>
-					</div>
-				</div>
-				</div>
-		</div><div class="jet-listing-grid__item jet-listing-dynamic-post-3415" data-post-id="3415" >		<div data-elementor-type="jet-listing-items" data-elementor-id="3352" class="elementor elementor-3352" data-elementor-post-type="jet-engine">
-				<div class="elementor-element elementor-element-8023624 e-flex e-con-boxed e-con e-parent" data-id="8023624" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[],&quot;content_width&quot;:&quot;boxed&quot;}" data-core-v316-plus="true">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-e5c3a60 elementor-widget__width-inherit elementor-position-top elementor-widget elementor-widget-image-box" data-id="e5c3a60" data-element_type="widget" data-widget_type="image-box.default">
-				<div class="elementor-widget-container">
-			<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img post-id="3415" fifu-featured="1" loading="lazy" decoding="async" width="512" height="512" src="https://images2.imgbox.com/cf/2f/DUqWo5MW_o.png" class="attachment-full size-full wp-image-4717" alt="LMS Website" title="LMS Website" /></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">LMS Website</h3><p class="elementor-image-box-description">On our LMS website, you may begin seamless learning. Modern technology &amp; user-friendly UI are revolutionizing education for a brighter future.
+                </h2>
+                <p class="leading-relaxed text-center  text-base">On our LMS website, you may begin seamless learning. Modern technology & user-friendly UI are revolutionizing education for a brighter future.
 
-</p></div></div>		</div>
-				</div>
-					</div>
-				</div>
-				</div>
-		</div><div class="jet-listing-grid__item jet-listing-dynamic-post-3419" data-post-id="3419" >		<div data-elementor-type="jet-listing-items" data-elementor-id="3352" class="elementor elementor-3352" data-elementor-post-type="jet-engine">
-				<div class="elementor-element elementor-element-8023624 e-flex e-con-boxed e-con e-parent" data-id="8023624" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[],&quot;content_width&quot;:&quot;boxed&quot;}" data-core-v316-plus="true">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-e5c3a60 elementor-widget__width-inherit elementor-position-top elementor-widget elementor-widget-image-box" data-id="e5c3a60" data-element_type="widget" data-widget_type="image-box.default">
-				<div class="elementor-widget-container">
-			<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img post-id="3419" fifu-featured="1" loading="lazy" decoding="async" width="512" height="512" src="https://images2.imgbox.com/e6/08/e65Nns3N_o.png" class="attachment-full size-full wp-image-4715" alt="Custom solutions" title="Custom solutions" /></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Custom solutions</h3><p class="elementor-image-box-description">Any form of custom website that meets your specific requirements can be made by us. Please share your ideas with us so that we can all support you as you grow your business.
 
-</p></div></div>		</div>
-				</div>
-					</div>
-				</div>
-				</div>
-		</div><div class="jet-listing-grid__item jet-listing-dynamic-post-3818" data-post-id="3818" >		<div data-elementor-type="jet-listing-items" data-elementor-id="3352" class="elementor elementor-3352" data-elementor-post-type="jet-engine">
-				<div class="elementor-element elementor-element-8023624 e-flex e-con-boxed e-con e-parent" data-id="8023624" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[],&quot;content_width&quot;:&quot;boxed&quot;}" data-core-v316-plus="true">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-e5c3a60 elementor-widget__width-inherit elementor-position-top elementor-widget elementor-widget-image-box" data-id="e5c3a60" data-element_type="widget" data-widget_type="image-box.default">
-				<div class="elementor-widget-container">
-			<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img post-id="3818" fifu-featured="1" loading="lazy" decoding="async" width="512" height="512" src="https://images2.imgbox.com/98/0f/A3Vb51HZ_o.png" class="attachment-full size-full wp-image-4719" alt="Need Extra Services?" title="Need Extra Services?" /></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Need Extra Services?</h3><p class="elementor-image-box-description">Crafting Exceptional Websites and Beyond. Elevate Your Brand with WordPress Mastery and More: Graphics Design, Video Editing,Digital Marketing &amp; Apps development.</p></div></div>		</div>
-				</div>
-					</div>
-				</div>
-				</div>
-		</div></div></div>		</div>
-				</div>
-				</div>
-					</div>
-				</div>
-				</div>
-		<div class="elementor-element elementor-element-50cb3090 e-con-full e-flex e-con e-child" data-id="50cb3090" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;jet_parallax_layout_list&quot;:[]}">
-		<div class="elementor-element elementor-element-1eef128 e-flex e-con-boxed e-con e-child" data-id="1eef128" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[],&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-60f263de elementor-widget elementor-widget-heading" data-id="60f263de" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">Our Pro Services</h2>		</div>
-				</div>
-				<div class="elementor-element elementor-element-47903778 elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor" data-id="47903778" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							Our pro services that is really affordable. You don&#8217;t need to pay first. We will talk first.						</div>
-				</div>
-		<div class="elementor-element elementor-element-9e87e21 e-flex e-con-boxed e-con e-child" data-id="9e87e21" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[],&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-9632106 elementor-widget elementor-widget-jet-listing-grid" data-id="9632106" data-element_type="widget" data-settings="{&quot;columns&quot;:3,&quot;columns_tablet&quot;:&quot;2&quot;,&quot;columns_mobile&quot;:&quot;1&quot;}" data-widget_type="jet-listing-grid.default">
-				<div class="elementor-widget-container">
-			<div class="jet-listing-grid jet-listing"><div class="jet-listing-grid__items grid-col-desk-3 grid-col-tablet-2 grid-col-mobile-1 jet-listing-grid--5137" data-queried-id="3299|WP_Post" data-nav="{&quot;enabled&quot;:false,&quot;type&quot;:null,&quot;more_el&quot;:null,&quot;query&quot;:[],&quot;widget_settings&quot;:{&quot;lisitng_id&quot;:5137,&quot;posts_num&quot;:6,&quot;columns&quot;:3,&quot;columns_tablet&quot;:2,&quot;columns_mobile&quot;:1,&quot;is_archive_template&quot;:&quot;&quot;,&quot;post_status&quot;:[&quot;publish&quot;],&quot;use_random_posts_num&quot;:&quot;&quot;,&quot;max_posts_num&quot;:9,&quot;not_found_message&quot;:&quot;No data was found&quot;,&quot;is_masonry&quot;:false,&quot;equal_columns_height&quot;:&quot;&quot;,&quot;use_load_more&quot;:&quot;&quot;,&quot;load_more_id&quot;:&quot;&quot;,&quot;load_more_type&quot;:&quot;click&quot;,&quot;load_more_offset&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0,&quot;sizes&quot;:[]},&quot;use_custom_post_types&quot;:&quot;&quot;,&quot;custom_post_types&quot;:[],&quot;hide_widget_if&quot;:&quot;&quot;,&quot;carousel_enabled&quot;:&quot;&quot;,&quot;slides_to_scroll&quot;:&quot;1&quot;,&quot;arrows&quot;:&quot;true&quot;,&quot;arrow_icon&quot;:&quot;fa fa-angle-left&quot;,&quot;dots&quot;:&quot;&quot;,&quot;autoplay&quot;:&quot;true&quot;,&quot;pause_on_hover&quot;:&quot;true&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;true&quot;,&quot;center_mode&quot;:&quot;&quot;,&quot;effect&quot;:&quot;slide&quot;,&quot;speed&quot;:500,&quot;inject_alternative_items&quot;:&quot;&quot;,&quot;injection_items&quot;:[],&quot;scroll_slider_enabled&quot;:&quot;&quot;,&quot;scroll_slider_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;],&quot;custom_query&quot;:false,&quot;custom_query_id&quot;:&quot;&quot;,&quot;_element_id&quot;:&quot;&quot;}}" data-page="1" data-pages="2" data-listing-source="posts" data-listing-id="5137" data-query-id=""><div class="jet-listing-grid__item jet-listing-dynamic-post-6187" data-post-id="6187" ><div class="jet-engine-listing-overlay-wrap" data-url="https://devsoffice.com/our-services/search-engine-optimization/">		<div data-elementor-type="jet-listing-items" data-elementor-id="5137" class="elementor elementor-5137" data-elementor-post-type="jet-engine">
-				<div class="elementor-element elementor-element-decbb05 e-flex e-con-boxed e-con e-parent" data-id="decbb05" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;jet_parallax_layout_list&quot;:[],&quot;content_width&quot;:&quot;boxed&quot;}" data-core-v316-plus="true">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-700c0ce elementor-widget elementor-widget-jet-listing-dynamic-image" data-id="700c0ce" data-element_type="widget" data-widget_type="jet-listing-dynamic-image.default">
-				<div class="elementor-widget-container">
-			<div class="jet-listing jet-listing-dynamic-image"><img decoding="async" width="1280" height="720" src="https://devsoffice.com/wp-content/uploads/2024/03/10-1.png" class="jet-listing-dynamic-image__img attachment-full size-full wp-post-image" alt="Search Engine Optimization" title="Search Engine Optimization" srcset="https://devsoffice.com/wp-content/uploads/2024/03/10-1.png 1280w, https://devsoffice.com/wp-content/uploads/2024/03/10-1-300x169.png 300w, https://devsoffice.com/wp-content/uploads/2024/03/10-1-1024x576.png 1024w, https://devsoffice.com/wp-content/uploads/2024/03/10-1-768x432.png 768w, https://devsoffice.com/wp-content/uploads/2024/03/10-1-600x338.png 600w" sizes="(max-width: 1280px) 100vw, 1280px" loading="eager" /></div>		</div>
-				</div>
-				<div class="elementor-element elementor-element-881f3ae elementor-widget elementor-widget-jet-listing-dynamic-field" data-id="881f3ae" data-element_type="widget" data-widget_type="jet-listing-dynamic-field.default">
-				<div class="elementor-widget-container">
-			<div class="jet-listing jet-listing-dynamic-field display-inline"><div class="jet-listing-dynamic-field__inline-wrap"><div class="jet-listing-dynamic-field__content">Search Engine Optimization</div></div></div>		</div>
-				</div>
-				<div class="elementor-element elementor-element-a6a4243 elementor-align-center elementor-widget elementor-widget-button" data-id="a6a4243" data-element_type="widget" data-widget_type="button.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-button-wrapper">
-			<a class="elementor-button elementor-button-link elementor-size-sm" href="https://devsoffice.com/our-services/search-engine-optimization/">
-						<span class="elementor-button-content-wrapper">
-						<span class="elementor-button-text">Learn More</span>
-		</span>
-					</a>
-		</div>
-				</div>
-				</div>
-					</div>
-				</div>
-				</div>
-		<a href="https://devsoffice.com/our-services/search-engine-optimization/" class="jet-engine-listing-overlay-link"></a></div></div><div class="jet-listing-grid__item jet-listing-dynamic-post-5953" data-post-id="5953" ><div class="jet-engine-listing-overlay-wrap" data-url="https://devsoffice.com/our-services/booking-and-appointment/">		<div data-elementor-type="jet-listing-items" data-elementor-id="5137" class="elementor elementor-5137" data-elementor-post-type="jet-engine">
-				<div class="elementor-element elementor-element-decbb05 e-flex e-con-boxed e-con e-parent" data-id="decbb05" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;jet_parallax_layout_list&quot;:[],&quot;content_width&quot;:&quot;boxed&quot;}" data-core-v316-plus="true">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-700c0ce elementor-widget elementor-widget-jet-listing-dynamic-image" data-id="700c0ce" data-element_type="widget" data-widget_type="jet-listing-dynamic-image.default">
-				<div class="elementor-widget-container">
-			<div class="jet-listing jet-listing-dynamic-image"><img decoding="async" width="1280" height="720" src="https://devsoffice.com/wp-content/uploads/2024/03/11-1.png" class="jet-listing-dynamic-image__img attachment-full size-full wp-post-image" alt="Booking and Appointment" title="Booking and Appointment" srcset="https://devsoffice.com/wp-content/uploads/2024/03/11-1.png 1280w, https://devsoffice.com/wp-content/uploads/2024/03/11-1-300x169.png 300w, https://devsoffice.com/wp-content/uploads/2024/03/11-1-1024x576.png 1024w, https://devsoffice.com/wp-content/uploads/2024/03/11-1-768x432.png 768w, https://devsoffice.com/wp-content/uploads/2024/03/11-1-600x338.png 600w" sizes="(max-width: 1280px) 100vw, 1280px" loading="eager" /></div>		</div>
-				</div>
-				<div class="elementor-element elementor-element-881f3ae elementor-widget elementor-widget-jet-listing-dynamic-field" data-id="881f3ae" data-element_type="widget" data-widget_type="jet-listing-dynamic-field.default">
-				<div class="elementor-widget-container">
-			<div class="jet-listing jet-listing-dynamic-field display-inline"><div class="jet-listing-dynamic-field__inline-wrap"><div class="jet-listing-dynamic-field__content">Booking and Appointment</div></div></div>		</div>
-				</div>
-				<div class="elementor-element elementor-element-a6a4243 elementor-align-center elementor-widget elementor-widget-button" data-id="a6a4243" data-element_type="widget" data-widget_type="button.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-button-wrapper">
-			<a class="elementor-button elementor-button-link elementor-size-sm" href="https://devsoffice.com/our-services/booking-and-appointment/">
-						<span class="elementor-button-content-wrapper">
-						<span class="elementor-button-text">Learn More</span>
-		</span>
-					</a>
-		</div>
-				</div>
-				</div>
-					</div>
-				</div>
-				</div>
-		<a href="https://devsoffice.com/our-services/booking-and-appointment/" class="jet-engine-listing-overlay-link"></a></div></div><div class="jet-listing-grid__item jet-listing-dynamic-post-5951" data-post-id="5951" ><div class="jet-engine-listing-overlay-wrap" data-url="https://devsoffice.com/our-services/learning-management-system/">		<div data-elementor-type="jet-listing-items" data-elementor-id="5137" class="elementor elementor-5137" data-elementor-post-type="jet-engine">
-				<div class="elementor-element elementor-element-decbb05 e-flex e-con-boxed e-con e-parent" data-id="decbb05" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;jet_parallax_layout_list&quot;:[],&quot;content_width&quot;:&quot;boxed&quot;}" data-core-v316-plus="true">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-700c0ce elementor-widget elementor-widget-jet-listing-dynamic-image" data-id="700c0ce" data-element_type="widget" data-widget_type="jet-listing-dynamic-image.default">
-				<div class="elementor-widget-container">
-			<div class="jet-listing jet-listing-dynamic-image"><img decoding="async" width="1280" height="720" src="https://devsoffice.com/wp-content/uploads/2024/03/12.png" class="jet-listing-dynamic-image__img attachment-full size-full wp-post-image" alt="Learning Management System" title="Learning Management System" srcset="https://devsoffice.com/wp-content/uploads/2024/03/12.png 1280w, https://devsoffice.com/wp-content/uploads/2024/03/12-300x169.png 300w, https://devsoffice.com/wp-content/uploads/2024/03/12-1024x576.png 1024w, https://devsoffice.com/wp-content/uploads/2024/03/12-768x432.png 768w, https://devsoffice.com/wp-content/uploads/2024/03/12-600x338.png 600w" sizes="(max-width: 1280px) 100vw, 1280px" loading="eager" /></div>		</div>
-				</div>
-				<div class="elementor-element elementor-element-881f3ae elementor-widget elementor-widget-jet-listing-dynamic-field" data-id="881f3ae" data-element_type="widget" data-widget_type="jet-listing-dynamic-field.default">
-				<div class="elementor-widget-container">
-			<div class="jet-listing jet-listing-dynamic-field display-inline"><div class="jet-listing-dynamic-field__inline-wrap"><div class="jet-listing-dynamic-field__content">Learning Management System</div></div></div>		</div>
-				</div>
-				<div class="elementor-element elementor-element-a6a4243 elementor-align-center elementor-widget elementor-widget-button" data-id="a6a4243" data-element_type="widget" data-widget_type="button.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-button-wrapper">
-			<a class="elementor-button elementor-button-link elementor-size-sm" href="https://devsoffice.com/our-services/learning-management-system/">
-						<span class="elementor-button-content-wrapper">
-						<span class="elementor-button-text">Learn More</span>
-		</span>
-					</a>
-		</div>
-				</div>
-				</div>
-					</div>
-				</div>
-				</div>
-		<a href="https://devsoffice.com/our-services/learning-management-system/" class="jet-engine-listing-overlay-link"></a></div></div><div class="jet-listing-grid__item jet-listing-dynamic-post-5949" data-post-id="5949" ><div class="jet-engine-listing-overlay-wrap" data-url="https://devsoffice.com/our-services/membership-website/">		<div data-elementor-type="jet-listing-items" data-elementor-id="5137" class="elementor elementor-5137" data-elementor-post-type="jet-engine">
-				<div class="elementor-element elementor-element-decbb05 e-flex e-con-boxed e-con e-parent" data-id="decbb05" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;jet_parallax_layout_list&quot;:[],&quot;content_width&quot;:&quot;boxed&quot;}" data-core-v316-plus="true">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-700c0ce elementor-widget elementor-widget-jet-listing-dynamic-image" data-id="700c0ce" data-element_type="widget" data-widget_type="jet-listing-dynamic-image.default">
-				<div class="elementor-widget-container">
-			<div class="jet-listing jet-listing-dynamic-image"><img decoding="async" width="1280" height="720" src="https://devsoffice.com/wp-content/uploads/2024/03/13.png" class="jet-listing-dynamic-image__img attachment-full size-full wp-post-image" alt="Membership Website" title="Membership Website" srcset="https://devsoffice.com/wp-content/uploads/2024/03/13.png 1280w, https://devsoffice.com/wp-content/uploads/2024/03/13-300x169.png 300w, https://devsoffice.com/wp-content/uploads/2024/03/13-1024x576.png 1024w, https://devsoffice.com/wp-content/uploads/2024/03/13-768x432.png 768w, https://devsoffice.com/wp-content/uploads/2024/03/13-600x338.png 600w" sizes="(max-width: 1280px) 100vw, 1280px" loading="eager" /></div>		</div>
-				</div>
-				<div class="elementor-element elementor-element-881f3ae elementor-widget elementor-widget-jet-listing-dynamic-field" data-id="881f3ae" data-element_type="widget" data-widget_type="jet-listing-dynamic-field.default">
-				<div class="elementor-widget-container">
-			<div class="jet-listing jet-listing-dynamic-field display-inline"><div class="jet-listing-dynamic-field__inline-wrap"><div class="jet-listing-dynamic-field__content">Membership Website</div></div></div>		</div>
-				</div>
-				<div class="elementor-element elementor-element-a6a4243 elementor-align-center elementor-widget elementor-widget-button" data-id="a6a4243" data-element_type="widget" data-widget_type="button.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-button-wrapper">
-			<a class="elementor-button elementor-button-link elementor-size-sm" href="https://devsoffice.com/our-services/membership-website/">
-						<span class="elementor-button-content-wrapper">
-						<span class="elementor-button-text">Learn More</span>
-		</span>
-					</a>
-		</div>
-				</div>
-				</div>
-					</div>
-				</div>
-				</div>
-		<a href="https://devsoffice.com/our-services/membership-website/" class="jet-engine-listing-overlay-link"></a></div></div><div class="jet-listing-grid__item jet-listing-dynamic-post-5947" data-post-id="5947" ><div class="jet-engine-listing-overlay-wrap" data-url="https://devsoffice.com/our-services/e-commerce-website/">		<div data-elementor-type="jet-listing-items" data-elementor-id="5137" class="elementor elementor-5137" data-elementor-post-type="jet-engine">
-				<div class="elementor-element elementor-element-decbb05 e-flex e-con-boxed e-con e-parent" data-id="decbb05" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;jet_parallax_layout_list&quot;:[],&quot;content_width&quot;:&quot;boxed&quot;}" data-core-v316-plus="true">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-700c0ce elementor-widget elementor-widget-jet-listing-dynamic-image" data-id="700c0ce" data-element_type="widget" data-widget_type="jet-listing-dynamic-image.default">
-				<div class="elementor-widget-container">
-			<div class="jet-listing jet-listing-dynamic-image"><img decoding="async" width="1280" height="720" src="https://devsoffice.com/wp-content/uploads/2024/03/14.png" class="jet-listing-dynamic-image__img attachment-full size-full wp-post-image" alt="E-commerce Website" title="E-commerce Website" srcset="https://devsoffice.com/wp-content/uploads/2024/03/14.png 1280w, https://devsoffice.com/wp-content/uploads/2024/03/14-300x169.png 300w, https://devsoffice.com/wp-content/uploads/2024/03/14-1024x576.png 1024w, https://devsoffice.com/wp-content/uploads/2024/03/14-768x432.png 768w, https://devsoffice.com/wp-content/uploads/2024/03/14-600x338.png 600w" sizes="(max-width: 1280px) 100vw, 1280px" loading="eager" /></div>		</div>
-				</div>
-				<div class="elementor-element elementor-element-881f3ae elementor-widget elementor-widget-jet-listing-dynamic-field" data-id="881f3ae" data-element_type="widget" data-widget_type="jet-listing-dynamic-field.default">
-				<div class="elementor-widget-container">
-			<div class="jet-listing jet-listing-dynamic-field display-inline"><div class="jet-listing-dynamic-field__inline-wrap"><div class="jet-listing-dynamic-field__content">E-commerce Website</div></div></div>		</div>
-				</div>
-				<div class="elementor-element elementor-element-a6a4243 elementor-align-center elementor-widget elementor-widget-button" data-id="a6a4243" data-element_type="widget" data-widget_type="button.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-button-wrapper">
-			<a class="elementor-button elementor-button-link elementor-size-sm" href="https://devsoffice.com/our-services/e-commerce-website/">
-						<span class="elementor-button-content-wrapper">
-						<span class="elementor-button-text">Learn More</span>
-		</span>
-					</a>
-		</div>
-				</div>
-				</div>
-					</div>
-				</div>
-				</div>
-		<a href="https://devsoffice.com/our-services/e-commerce-website/" class="jet-engine-listing-overlay-link"></a></div></div><div class="jet-listing-grid__item jet-listing-dynamic-post-5945" data-post-id="5945" ><div class="jet-engine-listing-overlay-wrap" data-url="https://devsoffice.com/our-services/customization-of-cms-website/">		<div data-elementor-type="jet-listing-items" data-elementor-id="5137" class="elementor elementor-5137" data-elementor-post-type="jet-engine">
-				<div class="elementor-element elementor-element-decbb05 e-flex e-con-boxed e-con e-parent" data-id="decbb05" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;jet_parallax_layout_list&quot;:[],&quot;content_width&quot;:&quot;boxed&quot;}" data-core-v316-plus="true">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-700c0ce elementor-widget elementor-widget-jet-listing-dynamic-image" data-id="700c0ce" data-element_type="widget" data-widget_type="jet-listing-dynamic-image.default">
-				<div class="elementor-widget-container">
-			<div class="jet-listing jet-listing-dynamic-image"><img decoding="async" width="1280" height="720" src="https://devsoffice.com/wp-content/uploads/2024/03/15.png" class="jet-listing-dynamic-image__img attachment-full size-full wp-post-image" alt="Customization of CMS Website" title="Customization of CMS Website" srcset="https://devsoffice.com/wp-content/uploads/2024/03/15.png 1280w, https://devsoffice.com/wp-content/uploads/2024/03/15-300x169.png 300w, https://devsoffice.com/wp-content/uploads/2024/03/15-1024x576.png 1024w, https://devsoffice.com/wp-content/uploads/2024/03/15-768x432.png 768w, https://devsoffice.com/wp-content/uploads/2024/03/15-600x338.png 600w" sizes="(max-width: 1280px) 100vw, 1280px" loading="eager" /></div>		</div>
-				</div>
-				<div class="elementor-element elementor-element-881f3ae elementor-widget elementor-widget-jet-listing-dynamic-field" data-id="881f3ae" data-element_type="widget" data-widget_type="jet-listing-dynamic-field.default">
-				<div class="elementor-widget-container">
-			<div class="jet-listing jet-listing-dynamic-field display-inline"><div class="jet-listing-dynamic-field__inline-wrap"><div class="jet-listing-dynamic-field__content">Customization of CMS Website</div></div></div>		</div>
-				</div>
-				<div class="elementor-element elementor-element-a6a4243 elementor-align-center elementor-widget elementor-widget-button" data-id="a6a4243" data-element_type="widget" data-widget_type="button.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-button-wrapper">
-			<a class="elementor-button elementor-button-link elementor-size-sm" href="https://devsoffice.com/our-services/customization-of-cms-website/">
-						<span class="elementor-button-content-wrapper">
-						<span class="elementor-button-text">Learn More</span>
-		</span>
-					</a>
-		</div>
-				</div>
-				</div>
-					</div>
-				</div>
-				</div>
-		<a href="https://devsoffice.com/our-services/customization-of-cms-website/" class="jet-engine-listing-overlay-link"></a></div></div></div></div>		</div>
-				</div>
-					</div>
-				</div>
-					</div>
-				</div>
-				</div>
-		<div class="elementor-element elementor-element-6784188 e-flex e-con-boxed e-con e-child" data-id="6784188" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[],&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-537c1de elementor-widget elementor-widget-heading" data-id="537c1de" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">Our works that we have completed</h2>		</div>
-				</div>
-				<div class="elementor-element elementor-element-16bb3794 elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor" data-id="16bb3794" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							We have completed 100+ websites and delivered sucessfully with 5 star ratings.						</div>
-				</div>
-				<div class="elementor-element elementor-element-d7b3336 elementor-widget__width-inherit elementor-widget elementor-widget-jet-listing-grid" data-id="d7b3336" data-element_type="widget" data-settings="{&quot;columns&quot;:&quot;4&quot;,&quot;columns_tablet&quot;:&quot;2&quot;,&quot;columns_mobile&quot;:&quot;1&quot;}" data-widget_type="jet-listing-grid.default">
-				<div class="elementor-widget-container">
-			<div class="jet-listing-grid jet-listing"><div class="jet-listing-grid__items grid-col-desk-4 grid-col-tablet-2 grid-col-mobile-1 jet-listing-grid--3353" data-queried-id="3299|WP_Post" data-nav="{&quot;enabled&quot;:false,&quot;type&quot;:null,&quot;more_el&quot;:null,&quot;query&quot;:[],&quot;widget_settings&quot;:{&quot;lisitng_id&quot;:3353,&quot;posts_num&quot;:4,&quot;columns&quot;:4,&quot;columns_tablet&quot;:2,&quot;columns_mobile&quot;:1,&quot;is_archive_template&quot;:&quot;&quot;,&quot;post_status&quot;:[&quot;publish&quot;],&quot;use_random_posts_num&quot;:&quot;&quot;,&quot;max_posts_num&quot;:9,&quot;not_found_message&quot;:&quot;No data was found&quot;,&quot;is_masonry&quot;:false,&quot;equal_columns_height&quot;:&quot;&quot;,&quot;use_load_more&quot;:&quot;&quot;,&quot;load_more_id&quot;:&quot;&quot;,&quot;load_more_type&quot;:&quot;click&quot;,&quot;load_more_offset&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0,&quot;sizes&quot;:[]},&quot;use_custom_post_types&quot;:&quot;&quot;,&quot;custom_post_types&quot;:[],&quot;hide_widget_if&quot;:&quot;&quot;,&quot;carousel_enabled&quot;:&quot;&quot;,&quot;slides_to_scroll&quot;:&quot;1&quot;,&quot;arrows&quot;:&quot;true&quot;,&quot;arrow_icon&quot;:&quot;fa fa-angle-left&quot;,&quot;dots&quot;:&quot;&quot;,&quot;autoplay&quot;:&quot;true&quot;,&quot;pause_on_hover&quot;:&quot;true&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;true&quot;,&quot;center_mode&quot;:&quot;&quot;,&quot;effect&quot;:&quot;slide&quot;,&quot;speed&quot;:500,&quot;inject_alternative_items&quot;:&quot;&quot;,&quot;injection_items&quot;:[],&quot;scroll_slider_enabled&quot;:&quot;&quot;,&quot;scroll_slider_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;],&quot;custom_query&quot;:false,&quot;custom_query_id&quot;:&quot;&quot;,&quot;_element_id&quot;:&quot;&quot;}}" data-page="1" data-pages="5" data-listing-source="posts" data-listing-id="3353" data-query-id=""><div class="jet-listing-grid__item jet-listing-dynamic-post-5004" data-post-id="5004" >		<div data-elementor-type="jet-listing-items" data-elementor-id="3353" class="elementor elementor-3353" data-elementor-post-type="jet-engine">
-				<div class="elementor-element elementor-element-fb0a513 e-flex e-con-boxed e-con e-parent" data-id="fb0a513" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;jet_parallax_layout_list&quot;:[],&quot;content_width&quot;:&quot;boxed&quot;}" data-core-v316-plus="true">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-be97938 elementor-widget elementor-widget-jet-listing-dynamic-image" data-id="be97938" data-element_type="widget" data-widget_type="jet-listing-dynamic-image.default">
-				<div class="elementor-widget-container">
-			<div class="jet-listing jet-listing-dynamic-image"><a href="https://devsoffice.com/portfolios/new-heights/" class="jet-listing-dynamic-image__link"><img post-id="5004" fifu-featured="1" decoding="async" width="1890" height="817" src="https://i.ibb.co/ZKxc98J/Screenshot-50.png" class="jet-listing-dynamic-image__img attachment-full size-full wp-post-image" alt="New Heights" title="New Heights" title="New Heights" loading="eager" /></a></div>		</div>
-				</div>
-				<div class="elementor-element elementor-element-9b0216f elementor-widget elementor-widget-jet-listing-dynamic-field" data-id="9b0216f" data-element_type="widget" data-widget_type="jet-listing-dynamic-field.default">
-				<div class="elementor-widget-container">
-			<div class="jet-listing jet-listing-dynamic-field display-inline"><div class="jet-listing-dynamic-field__inline-wrap"><div class="jet-listing-dynamic-field__content">New Heights</div></div></div>		</div>
-				</div>
-		<div class="elementor-element elementor-element-5c300a2 e-con-full e-flex e-con e-child" data-id="5c300a2" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;jet_parallax_layout_list&quot;:[]}">
-				<div class="jet-popup-target elementor-element elementor-element-f8df28e elementor-widget__width-initial elementor-widget elementor-widget-jet-listing-dynamic-link" data-jet-popup="{&quot;attached-popup&quot;:&quot;jet-popup-3382&quot;,&quot;trigger-type&quot;:&quot;click-self&quot;,&quot;trigger-custom-selector&quot;:&quot;&quot;,&quot;is-jet-engine&quot;:true}" data-id="f8df28e" data-element_type="widget" data-widget_type="jet-listing-dynamic-link.default">
-				<div class="elementor-widget-container">
-			<div class="jet-listing jet-listing-dynamic-link"><a href="https://devsoffice.com/portfolios/new-heights/" class="jet-listing-dynamic-link__link"><span class="jet-listing-dynamic-link__label">C.Study</span></a></div>		</div>
-				</div>
-				<div class="elementor-element elementor-element-3050233 elementor-align-justify elementor-widget__width-initial popuptrigger elementor-widget elementor-widget-button" data-id="3050233" data-element_type="widget" data-widget_type="button.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-button-wrapper">
-			<a class="elementor-button elementor-button-link elementor-size-md" href="https://www.newheightscs.net/" target="_blank">
-						<span class="elementor-button-content-wrapper">
-						<span class="elementor-button-text">Preview</span>
-		</span>
-					</a>
-		</div>
-				</div>
-				</div>
-				</div>
-					</div>
-				</div>
-				</div>
-		</div><div class="jet-listing-grid__item jet-listing-dynamic-post-5002" data-post-id="5002" >		<div data-elementor-type="jet-listing-items" data-elementor-id="3353" class="elementor elementor-3353" data-elementor-post-type="jet-engine">
-				<div class="elementor-element elementor-element-fb0a513 e-flex e-con-boxed e-con e-parent" data-id="fb0a513" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;jet_parallax_layout_list&quot;:[],&quot;content_width&quot;:&quot;boxed&quot;}" data-core-v316-plus="true">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-be97938 elementor-widget elementor-widget-jet-listing-dynamic-image" data-id="be97938" data-element_type="widget" data-widget_type="jet-listing-dynamic-image.default">
-				<div class="elementor-widget-container">
-			<div class="jet-listing jet-listing-dynamic-image"><a href="https://devsoffice.com/portfolios/six-figure/" class="jet-listing-dynamic-image__link"><img post-id="5002" fifu-featured="1" decoding="async" width="1906" height="814" src="https://i.ibb.co/VVBzshW/Screenshot-49.png" class="jet-listing-dynamic-image__img attachment-full size-full wp-post-image" alt="Six Figure" title="Six Figure" title="Six Figure" loading="eager" /></a></div>		</div>
-				</div>
-				<div class="elementor-element elementor-element-9b0216f elementor-widget elementor-widget-jet-listing-dynamic-field" data-id="9b0216f" data-element_type="widget" data-widget_type="jet-listing-dynamic-field.default">
-				<div class="elementor-widget-container">
-			<div class="jet-listing jet-listing-dynamic-field display-inline"><div class="jet-listing-dynamic-field__inline-wrap"><div class="jet-listing-dynamic-field__content">Six Figure</div></div></div>		</div>
-				</div>
-		<div class="elementor-element elementor-element-5c300a2 e-con-full e-flex e-con e-child" data-id="5c300a2" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;jet_parallax_layout_list&quot;:[]}">
-				<div class="jet-popup-target elementor-element elementor-element-f8df28e elementor-widget__width-initial elementor-widget elementor-widget-jet-listing-dynamic-link" data-jet-popup="{&quot;attached-popup&quot;:&quot;jet-popup-3382&quot;,&quot;trigger-type&quot;:&quot;click-self&quot;,&quot;trigger-custom-selector&quot;:&quot;&quot;,&quot;is-jet-engine&quot;:true}" data-id="f8df28e" data-element_type="widget" data-widget_type="jet-listing-dynamic-link.default">
-				<div class="elementor-widget-container">
-			<div class="jet-listing jet-listing-dynamic-link"><a href="https://devsoffice.com/portfolios/six-figure/" class="jet-listing-dynamic-link__link"><span class="jet-listing-dynamic-link__label">C.Study</span></a></div>		</div>
-				</div>
-				<div class="elementor-element elementor-element-3050233 elementor-align-justify elementor-widget__width-initial popuptrigger elementor-widget elementor-widget-button" data-id="3050233" data-element_type="widget" data-widget_type="button.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-button-wrapper">
-			<a class="elementor-button elementor-button-link elementor-size-md" href="https://sixfigurecareerclub.com" target="_blank">
-						<span class="elementor-button-content-wrapper">
-						<span class="elementor-button-text">Preview</span>
-		</span>
-					</a>
-		</div>
-				</div>
-				</div>
-				</div>
-					</div>
-				</div>
-				</div>
-		</div><div class="jet-listing-grid__item jet-listing-dynamic-post-5000" data-post-id="5000" >		<div data-elementor-type="jet-listing-items" data-elementor-id="3353" class="elementor elementor-3353" data-elementor-post-type="jet-engine">
-				<div class="elementor-element elementor-element-fb0a513 e-flex e-con-boxed e-con e-parent" data-id="fb0a513" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;jet_parallax_layout_list&quot;:[],&quot;content_width&quot;:&quot;boxed&quot;}" data-core-v316-plus="true">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-be97938 elementor-widget elementor-widget-jet-listing-dynamic-image" data-id="be97938" data-element_type="widget" data-widget_type="jet-listing-dynamic-image.default">
-				<div class="elementor-widget-container">
-			<div class="jet-listing jet-listing-dynamic-image"><a href="https://devsoffice.com/portfolios/ev-masterclass/" class="jet-listing-dynamic-image__link"><img post-id="5000" fifu-featured="1" decoding="async" width="1902" height="798" src="https://i.ibb.co/M7NddB5/Screenshot-47.png" class="jet-listing-dynamic-image__img attachment-full size-full wp-post-image" alt="EV MasterClass" title="EV MasterClass" title="EV MasterClass" loading="eager" /></a></div>		</div>
-				</div>
-				<div class="elementor-element elementor-element-9b0216f elementor-widget elementor-widget-jet-listing-dynamic-field" data-id="9b0216f" data-element_type="widget" data-widget_type="jet-listing-dynamic-field.default">
-				<div class="elementor-widget-container">
-			<div class="jet-listing jet-listing-dynamic-field display-inline"><div class="jet-listing-dynamic-field__inline-wrap"><div class="jet-listing-dynamic-field__content">EV MasterClass</div></div></div>		</div>
-				</div>
-		<div class="elementor-element elementor-element-5c300a2 e-con-full e-flex e-con e-child" data-id="5c300a2" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;jet_parallax_layout_list&quot;:[]}">
-				<div class="jet-popup-target elementor-element elementor-element-f8df28e elementor-widget__width-initial elementor-widget elementor-widget-jet-listing-dynamic-link" data-jet-popup="{&quot;attached-popup&quot;:&quot;jet-popup-3382&quot;,&quot;trigger-type&quot;:&quot;click-self&quot;,&quot;trigger-custom-selector&quot;:&quot;&quot;,&quot;is-jet-engine&quot;:true}" data-id="f8df28e" data-element_type="widget" data-widget_type="jet-listing-dynamic-link.default">
-				<div class="elementor-widget-container">
-			<div class="jet-listing jet-listing-dynamic-link"><a href="https://devsoffice.com/portfolios/ev-masterclass/" class="jet-listing-dynamic-link__link"><span class="jet-listing-dynamic-link__label">C.Study</span></a></div>		</div>
-				</div>
-				<div class="elementor-element elementor-element-3050233 elementor-align-justify elementor-widget__width-initial popuptrigger elementor-widget elementor-widget-button" data-id="3050233" data-element_type="widget" data-widget_type="button.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-button-wrapper">
-			<a class="elementor-button elementor-button-link elementor-size-md" href="https://evmasterclass.com/" target="_blank">
-						<span class="elementor-button-content-wrapper">
-						<span class="elementor-button-text">Preview</span>
-		</span>
-					</a>
-		</div>
-				</div>
-				</div>
-				</div>
-					</div>
-				</div>
-				</div>
-		</div><div class="jet-listing-grid__item jet-listing-dynamic-post-4998" data-post-id="4998" >		<div data-elementor-type="jet-listing-items" data-elementor-id="3353" class="elementor elementor-3353" data-elementor-post-type="jet-engine">
-				<div class="elementor-element elementor-element-fb0a513 e-flex e-con-boxed e-con e-parent" data-id="fb0a513" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;jet_parallax_layout_list&quot;:[],&quot;content_width&quot;:&quot;boxed&quot;}" data-core-v316-plus="true">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-be97938 elementor-widget elementor-widget-jet-listing-dynamic-image" data-id="be97938" data-element_type="widget" data-widget_type="jet-listing-dynamic-image.default">
-				<div class="elementor-widget-container">
-			<div class="jet-listing jet-listing-dynamic-image"><a href="https://devsoffice.com/portfolios/yegedutech/" class="jet-listing-dynamic-image__link"><img post-id="4998" fifu-featured="1" decoding="async" width="1887" height="810" src="https://i.ibb.co/WzqSTHg/Screenshot-48.png" class="jet-listing-dynamic-image__img attachment-full size-full wp-post-image" alt="Yegedutech" title="Yegedutech" title="Yegedutech" loading="eager" /></a></div>		</div>
-				</div>
-				<div class="elementor-element elementor-element-9b0216f elementor-widget elementor-widget-jet-listing-dynamic-field" data-id="9b0216f" data-element_type="widget" data-widget_type="jet-listing-dynamic-field.default">
-				<div class="elementor-widget-container">
-			<div class="jet-listing jet-listing-dynamic-field display-inline"><div class="jet-listing-dynamic-field__inline-wrap"><div class="jet-listing-dynamic-field__content">Yegedutech</div></div></div>		</div>
-				</div>
-		<div class="elementor-element elementor-element-5c300a2 e-con-full e-flex e-con e-child" data-id="5c300a2" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;jet_parallax_layout_list&quot;:[]}">
-				<div class="jet-popup-target elementor-element elementor-element-f8df28e elementor-widget__width-initial elementor-widget elementor-widget-jet-listing-dynamic-link" data-jet-popup="{&quot;attached-popup&quot;:&quot;jet-popup-3382&quot;,&quot;trigger-type&quot;:&quot;click-self&quot;,&quot;trigger-custom-selector&quot;:&quot;&quot;,&quot;is-jet-engine&quot;:true}" data-id="f8df28e" data-element_type="widget" data-widget_type="jet-listing-dynamic-link.default">
-				<div class="elementor-widget-container">
-			<div class="jet-listing jet-listing-dynamic-link"><a href="https://devsoffice.com/portfolios/yegedutech/" class="jet-listing-dynamic-link__link"><span class="jet-listing-dynamic-link__label">C.Study</span></a></div>		</div>
-				</div>
-				<div class="elementor-element elementor-element-3050233 elementor-align-justify elementor-widget__width-initial popuptrigger elementor-widget elementor-widget-button" data-id="3050233" data-element_type="widget" data-widget_type="button.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-button-wrapper">
-			<a class="elementor-button elementor-button-link elementor-size-md" href="https://yegedutech.com/" target="_blank">
-						<span class="elementor-button-content-wrapper">
-						<span class="elementor-button-text">Preview</span>
-		</span>
-					</a>
-		</div>
-				</div>
-				</div>
-				</div>
-					</div>
-				</div>
-				</div>
-		</div></div></div>		</div>
-				</div>
-				<div class="elementor-element elementor-element-10dc2f58 elementor-align-center elementor-widget elementor-widget-button" data-id="10dc2f58" data-element_type="widget" data-widget_type="button.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-button-wrapper">
-			<a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float" href="https://devsoffice.com/portfolios/">
-						<span class="elementor-button-content-wrapper">
-						<span class="elementor-button-text">All portfolios</span>
-		</span>
-					</a>
-		</div>
-				</div>
-				</div>
-					</div>
-				</div>
-		<div style="padding-bottom:300px;" class="elementor-element elementor-element-2fbeae3f e-con-full e-flex e-con e-child" data-id="2fbeae3f" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;jet_parallax_layout_list&quot;:[]}">
-		<div class="elementor-element elementor-element-6a156a e-flex e-con-boxed e-con e-child" data-id="6a156a" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[],&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-3a9514ae e-flex e-con-boxed e-con e-child" data-id="3a9514ae" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[],&quot;background_background&quot;:&quot;classic&quot;,&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-71396775 elementor-widget elementor-widget-heading" data-id="71396775" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">Let's see what our clients say about us.</h2>		</div>
-				</div>
-				<div class="elementor-element elementor-element-26846bf elementor-testimonial--mobile-align-center elementor-testimonial--skin-default elementor-testimonial--layout-image_inline elementor-testimonial--align-center elementor-arrows-yes elementor-widget elementor-widget-testimonial-carousel" data-id="26846bf" data-element_type="widget" data-settings="{&quot;show_arrows&quot;:&quot;yes&quot;,&quot;speed&quot;:500,&quot;autoplay&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;loop&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;space_between&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;space_between_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;space_between_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]}}" data-widget_type="testimonial-carousel.default">
-				<div class="elementor-widget-container">
-			<link rel="stylesheet" href="https://devsoffice.com/wp-content/plugins/elementor-pro/assets/css/widget-carousel.min.css">		<div class="elementor-swiper">
-			<div class="elementor-main-swiper swiper">
-				<div class="swiper-wrapper">
-											<div class="swiper-slide">
-									<div class="elementor-testimonial">
-							<div class="elementor-testimonial__content">
-					<div class="elementor-testimonial__text">
-						Can’t describe how happy I am with him!! He’s the best website developer on fiverr.. Firstly his after sales support is amazing. He always patiently guides me and answers my questions Secondly he’s always keen to learn new things and never gives up on providing the best service’s possible Third he is kind and honest. I recommend him 100%					</div>
-									</div>
-						<div class="elementor-testimonial__footer">
-									<div class="elementor-testimonial__image">
-						<img decoding="async" src="https://devsoffice.com/wp-content/uploads/2023/08/star.svg" alt="MR. Em">
-											</div>
-								<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">MR. Em</span><span class="elementor-testimonial__title">Dynamic Website</span></cite>			</div>
-		</div>
-								</div>
-											<div class="swiper-slide">
-									<div class="elementor-testimonial">
-							<div class="elementor-testimonial__content">
-					<div class="elementor-testimonial__text">
-						Will be ordering again and working with him on many other projects now. Dev-world delivered exactly what I needed quickly and without hassle. He also sent me short videos to show me how to do certain things so I can do basic maintenance on the courses myself.					</div>
-									</div>
-						<div class="elementor-testimonial__footer">
-									<div class="elementor-testimonial__image">
-						<img decoding="async" src="https://devsoffice.com/wp-content/uploads/2023/08/star.svg" alt="Lizzie">
-											</div>
-								<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Lizzie</span><span class="elementor-testimonial__title">Educational website creation</span></cite>			</div>
-		</div>
-								</div>
-											<div class="swiper-slide">
-									<div class="elementor-testimonial">
-							<div class="elementor-testimonial__content">
-					<div class="elementor-testimonial__text">
-						Ashiq is wonderful. This is still apart of the ongoing project we are working on together. We divide the work into weekly deliverables. Great work! I always know I will have a quality product when I work with Ashiq. Try for yourself!					</div>
-									</div>
-						<div class="elementor-testimonial__footer">
-									<div class="elementor-testimonial__image">
-						<img decoding="async" src="https://devsoffice.com/wp-content/uploads/2023/08/star.svg" alt="Jill Ford">
-											</div>
-								<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Jill Ford</span><span class="elementor-testimonial__title">Career growth website</span></cite>			</div>
-		</div>
-								</div>
-											<div class="swiper-slide">
-									<div class="elementor-testimonial">
-							<div class="elementor-testimonial__content">
-					<div class="elementor-testimonial__text">
-						Ashiq is amazing! I highly recommend him to everyone! He works very hard to get you what you are looking for and he is very talented! If you need web design Ashiq is your man! Thank you a lot for your great work!					</div>
-									</div>
-						<div class="elementor-testimonial__footer">
-									<div class="elementor-testimonial__image">
-						<img decoding="async" src="https://devsoffice.com/wp-content/uploads/2023/08/star.svg" alt="Michael Harlow">
-											</div>
-								<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Michael Harlow</span><span class="elementor-testimonial__title">Learn Language</span></cite>			</div>
-		</div>
-								</div>
-									</div>
-																				<div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0">
-							<i aria-hidden="true" class="eicon-chevron-left"></i>							<span class="elementor-screen-only">Previous</span>
-						</div>
-						<div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0">
-							<i aria-hidden="true" class="eicon-chevron-right"></i>							<span class="elementor-screen-only">Next</span>
-						</div>
-												</div>
-		</div>
-				</div>
-				</div>
-					</div>
-				</div>
-					</div>
-				</div>
-				</div>
-      </body>
+                </p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-contain object-center mb-6" src="https://images2.imgbox.com/e6/08/e65Nns3N_o.png" alt="content">
+   
+                <h2 class="text-lg text-center  text-gray-900 font-medium title-font mb-4">Custom solutions
+
+                </h2>
+                <p class="leading-relaxed text-center  text-base">Any form of custom website that meets your specific requirements can be made by us. Please share your ideas with us so that we can all support you as you grow your business.
+
+
+
+                </p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-contain object-center mb-6" src="https://images2.imgbox.com/98/0f/A3Vb51HZ_o.png" alt="content">
+
+                <h2 class="text-lg text-center text-gray-900 font-medium title-font mb-4">Need Extra Services?
+                </h2>
+                <p class="leading-relaxed text-center  text-base">Crafting Exceptional Websites and Beyond. Elevate Your Brand with WordPress Mastery and More: Graphics Design, Video Editing,Digital Marketing & Apps development.
+
+
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col">
+            <div class="h-1 bg-gray-200 rounded overflow-hidden">
+              <div class="w-24 h-full bg-purple-500"></div>
+            </div>
+            <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+              <h1 class="sm:w-2/5 text-gray-900 font-medium title-font text-2xl mb-2 sm:mb-0">Our Pro Services
+            </h1>
+              <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">Our pro services that is really affordable. You don’t need to pay first. We will talk first.
+            </p>
+            </div>
+          </div>
+          <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+            <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+              <div class="rounded-lg h-64 overflow-hidden">
+                <img alt="content" class="object-cover object-center h-full w-full" src="https://github.com/Devsofficebd/devsoffice/blob/main/10-1.png?raw=true">
+              </div>
+              <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Search Engine Optimization
+            </h2>
+              <a href="https://devsoffice.com/our-services/search-engine-optimization/" class="text-purple-500 inline-flex items-center mt-3">Learn More
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+                <div class="rounded-lg h-64 overflow-hidden">
+                  <img alt="content" class="object-cover object-center h-full w-full" src="https://github.com/Devsofficebd/devsoffice/blob/main/11-1.png?raw=true">
+                </div>
+                <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Booking And Appointment
+
+              </h2>
+                <a href="https://devsoffice.com/our-services/booking-and-appointment/" class="text-purple-500 inline-flex items-center mt-3">Learn More
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+              <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+                <div class="rounded-lg h-64 overflow-hidden">
+                  <img alt="content" class="object-cover object-center h-full w-full" src="https://github.com/Devsofficebd/devsoffice/blob/main/12.png?raw=true">
+                </div>
+                <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Learning Management System
+
+              </h2>
+                <a href="https://devsoffice.com/our-services/learning-management-system/" class="text-purple-500 inline-flex items-center mt-3">Learn More
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+          </div>
+
+
+          <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+            <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+              <div class="rounded-lg h-64 overflow-hidden">
+                <img alt="content" class="object-cover object-center h-full w-full" src="https://github.com/Devsofficebd/devsoffice/blob/main/13.png?raw=true">
+              </div>
+              <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Membership Website
+
+            </h2>
+              <a href="https://devsoffice.com/our-services/membership-website/" class="text-purple-500 inline-flex items-center mt-3">Learn More
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+                <div class="rounded-lg h-64 overflow-hidden">
+                  <img alt="content" class="object-cover object-center h-full w-full" src="https://github.com/Devsofficebd/devsoffice/blob/main/14.png?raw=true">
+                </div>
+                <h2 class="text-xl font-medium title-font text-gray-900 mt-5">E-Commerce Website
+
+              </h2>
+                <a href="https://devsoffice.com/our-services/e-commerce-website/" class="text-purple-500 inline-flex items-center mt-3">Learn More
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+              <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+                <div class="rounded-lg h-64 overflow-hidden">
+                  <img alt="content" class="object-cover object-center h-full w-full" src="https://github.com/Devsofficebd/devsoffice/blob/main/15.png?raw=true">
+                </div>
+                <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Customization Of CMS Website
+
+
+              </h2>
+                <a href="https://devsoffice.com/our-services/customization-of-cms-website/" class="text-purple-500 inline-flex items-center mt-3">Learn More
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+          </div>
+
+
+        </div>
+      </section>
+
+</body>
 </html>
